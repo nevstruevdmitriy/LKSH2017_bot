@@ -309,6 +309,7 @@ def testing():
 		out += "%d линия принадлежит %s\n" % (i, player[i])
 
 	writeResult(summa)
+	commitGit("all_testing")
 	return out
 
 #@ - Это есть хендлер (почитай теорию по питону) который 
@@ -429,7 +430,7 @@ def inputMesData(mes):
 		bot.reply_to(mes, "Не получилось((")
 	
 	log = "{%s}:%s: Добавлин новый файл" % (VarTime, nameSol)
-	log += commitGit(nameSol)
+	log += commitGit("Новый файл" + nameSol)
 	writeLog(nameSol, log)
 
 if __name__ == "__main__":
