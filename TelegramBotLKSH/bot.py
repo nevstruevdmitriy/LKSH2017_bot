@@ -23,7 +23,7 @@ raund = 0
 def commitGit(name):
 	pipe1 = subprocess.PIPE
 	pipe2 = subprocess.PIPE
-	out = "commit:"
+	out = "\ncommit:"
 	try:
 		add = subprocess.Popen(["git", "add", "*"])
 		timer = Timer(10, kill, [add])
@@ -35,7 +35,7 @@ def commitGit(name):
 		timer.start()
 		commit.wait()
 
-		pull = subprocess.Popen(["git", "pull"], stdin = pipe1, stdout = pipe2)
+		pull = subprocess.Popen(["git", "push"], stdin = pipe1, stdout = pipe2)
 		timer = Timer(10, kill, [pull])
 		timer.start()
 		pull.wait()
