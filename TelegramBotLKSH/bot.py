@@ -5,10 +5,12 @@ import subprocess
 import time
 import random
 import os
-import data
 import sys
 from threading import Timer
 from telebot import types
+
+
+import data
 
 # лямда функция процесса, что бы уметь убивать детей)))) ХАХАХА!
 kill = lambda process: process.kill()
@@ -17,6 +19,32 @@ kill = lambda process: process.kill()
 bot = telebot.TeleBot(data.TOKEN)
 
 raund = 0
+
+def commitGit(name):
+	out = "commit:"
+	try:
+		add = subprocess.Popen(["git", "add", "*"])
+		timer = Timer(10, kill, [add])
+		timer.start()
+		add.wait()
+
+		commit = subprocess.Popen(["git", "commit", "-m", name])
+		timer = Timer(10, kill, [commit])
+		timer.start()
+		commit.wait()
+
+		pull = subprocess.Popen(["git", "pull"])
+		timer1 = Timer(10, kill, [pull])
+		timer.start()
+		pull.wait()
+
+		pull.stdin.write("nevstruevdmitriy", "pfrfh.rf.16.")
+		out += "\n" + pull.stdout.read()
+	except:
+		out += "\n" + name1 + " error!!"
+	print(out)
+	return out;
+
 
 def writeResult_nom(raund):
 	resultName = "results_nom.txt"
@@ -398,6 +426,7 @@ def inputMesData(mes):
 		bot.reply_to(mes, "Не получилось((")
 	
 	log = "{%s}:%s: Добавлин новый файл" % (VarTime, nameSol)
+	log += commitGit(nameSol)
 	writeLog(nameSol, log)
 
 if __name__ == "__main__":
