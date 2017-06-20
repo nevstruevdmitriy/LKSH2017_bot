@@ -36,7 +36,7 @@ def commitGit(name):
 	commit.wait()
 
 	pull = subprocess.Popen(["git", "pull"], stdin = pipe1, stdout = pipe2)
-	timer1 = Timer(10, kill, [pull])
+	timer = Timer(10, kill, [pull])
 	timer.start()
 	pull.wait()
 
