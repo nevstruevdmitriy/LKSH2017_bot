@@ -21,6 +21,8 @@ bot = telebot.TeleBot(data.TOKEN)
 raund = 0
 
 def commitGit(name):
+	pipe1 = subprocess.PIPE
+	pipe2 = subprocess.PIPE
 	out = "commit:"
 	try:
 		add = subprocess.Popen(["git", "add", "*"])
@@ -33,7 +35,7 @@ def commitGit(name):
 		timer.start()
 		commit.wait()
 
-		pull = subprocess.Popen(["git", "pull"])
+		pull = subprocess.Popen(["git", "pull"], stdin = pipe1, stdout = pipe2)
 		timer1 = Timer(10, kill, [pull])
 		timer.start()
 		pull.wait()
