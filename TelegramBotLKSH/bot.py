@@ -42,7 +42,6 @@ def commitGit(name):
 		out += "\n" + pull.stdout.read()
 	except:
 		out += "\n" + name + " error!!"
-	print(out)
 	return out;
 
 
