@@ -24,27 +24,27 @@ def commitGit(name):
 	pipe1 = subprocess.PIPE
 	pipe2 = subprocess.PIPE
 	out = "commit:"
-	try:
-		add = subprocess.Popen(["git", "add", "*"])
-		timer = Timer(10, kill, [add])
-		timer.start()
-		add.wait()
+	#try:
+	add = subprocess.Popen(["git", "add", "*"])
+	timer = Timer(10, kill, [add])
+	timer.start()
+	add.wait()
 
-		commit = subprocess.Popen(["git", "commit", "-m", name])
-		timer = Timer(10, kill, [commit])
-		timer.start()
-		commit.wait()
+	commit = subprocess.Popen(["git", "commit", "-m", name])
+	timer = Timer(10, kill, [commit])
+	timer.start()
+	commit.wait()
 
-		pull = subprocess.Popen(["git", "pull"], stdin = pipe1, stdout = pipe2)
-		timer1 = Timer(10, kill, [pull])
-		timer.start()
-		pull.wait()
+	pull = subprocess.Popen(["git", "pull"], stdin = pipe1, stdout = pipe2)
+	timer1 = Timer(10, kill, [pull])
+	timer.start()
+	pull.wait()
 
-		pull.stdin.write("nevstruevdmitriy".encode())
-		pull.stdin.write("pfrfh.rf.16.".encode())
-		out += "\n" + str(pull.stdout.read())
-	except:
-		out += "\n" + name + " error!!"
+	pull.stdin.write("nevstruevdmitriy".encode())
+	pull.stdin.write("pfrfh.rf.16.".encode())
+	out += "\n" + str(pull.stdout.read())
+#	except:
+	out += "\n" + name + " error!!"
 	return out;
 
 
