@@ -41,7 +41,7 @@ def commitGit(name):
 		pull.stdin.write("nevstruevdmitriy", "pfrfh.rf.16.")
 		out += "\n" + pull.stdout.read()
 	except:
-		out += "\n" + name1 + " error!!"
+		out += "\n" + name + " error!!"
 	print(out)
 	return out;
 
