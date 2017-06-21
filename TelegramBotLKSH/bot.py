@@ -238,12 +238,12 @@ def war(name1, name2):
 			sol1.stdin.write((str(var2) + "\n").encode())
 			sol1.stdin.flush()
 		except:
-#			out += name1
+			out = out
 		try:
 			sol2.stdin.write((str(var1) + "\n").encode())
 			sol2.stdin.flush()
 		except:
-#			out += name2
+			out = out
 
 		if out != "":
 			break
