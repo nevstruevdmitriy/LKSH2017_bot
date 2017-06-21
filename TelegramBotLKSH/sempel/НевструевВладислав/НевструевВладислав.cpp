@@ -17,7 +17,7 @@ int main() {
 			cout << 1 << endl;
 		}
 		int a;
-		cin >> a;
+		//cin >> a;
 	}
 	cout << 3 << endl;
 }
