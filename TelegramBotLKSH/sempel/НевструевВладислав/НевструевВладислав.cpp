@@ -81,7 +81,7 @@ void strategy2() {
                      break;
             case 4 : turn(1);
                      break;
-            case 5 : turn(((rand() % 100) <= 25) ? 1 : 0);
+            case 5 : turn(((rand() % 100) <= 50) ? 1 : 0);
                      break;
             case 6 : turn(2);
                      break;
@@ -89,7 +89,7 @@ void strategy2() {
                      break;
             case 8 : turn(1);
                      break;
-            case 9 : turn(0);
+            case 9 : turn(((rand() % 100) <= 50) ? 1 : 0);
                      break;
             case 10 : turn(rand() % 2 + 1);
                      break;
