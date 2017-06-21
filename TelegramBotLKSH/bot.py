@@ -323,6 +323,7 @@ def testing():
 	return out
 
 def checkSol(name):
+	src = "sempel/%s/%s.cpp" % (name, name)
 	with open(src, 'rb') as name:
 		for i in data.worldKey:
 			for j in name:
