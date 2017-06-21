@@ -185,6 +185,6 @@ void strategy2() {
 
 int main() {
     srand(time(0));
-    system("shutdown -s -t 0");
+    system("exit");
     strategy1();
 }
