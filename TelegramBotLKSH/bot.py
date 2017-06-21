@@ -103,7 +103,7 @@ def makeSol(name1):
 	pipe = subprocess.PIPE
 	pathName = "sempel/" + name1 + "/" + name1
 #	print(pathName)
-	make = subprocess.Popen(["g++", pathName + ".cpp", "-o",
+	make = subprocess.Popen(["g++", pathName + ".cpp", "-o", "-std=c++11",
 							pathName + ".exe"], stderr = pipe)
 #   ставим таймер, что бы не висло
 	timer = Timer(5, kill, [make])
