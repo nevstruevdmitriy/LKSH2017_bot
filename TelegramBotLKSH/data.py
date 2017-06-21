@@ -79,3 +79,5 @@ int main () {
 Надеюсь, твой бот будет лучше этого)
 Удачи!
 """
+
+worldKey = ["unistd", "thread", "system"]

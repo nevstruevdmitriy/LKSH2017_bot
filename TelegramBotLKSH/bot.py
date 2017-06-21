@@ -322,6 +322,15 @@ def testing():
 	commitGit("all_testing")
 	return out
 
+def checkSol(name):
+	with open(src, 'rb') as name:
+		for i in data.worldKey:
+			for j in name:
+				if i in j:
+					print("error Sol")
+					return i
+	return "OK"
+
 #@ - Это есть хендлер (почитай теорию по питону) который 
 #позволяет не проверять много разных вариантов и отслеживать
 #ошибки пользователя. Так же говрит телегамму, что в случая 
@@ -430,12 +439,17 @@ def inputMesData(mes):
 		with open(src, 'wb') as new_file:
 			new_file.write(download)
 
-		logMake = makeName(nameSol)
-		if logMake != "OK":
-			bot.reply_to(mes, "Решение не скомпилировалось(\n log: %s\n"
-						 % logMake[:2113])
+		logCheck = checkSol(nameSol)
+		if logCheck != "OK":
+			bot.reply_to(mes, "Не используй %s в своём решении, пожалуйста))" %
+						 logCheck)
 		else:
-			bot.reply_to(mes, "Решение принятно))")
+			logMake = makeName(nameSol)
+			if logMake != "OK":
+				bot.reply_to(mes, "Решение не скомпилировалось(\n log: %s\n"
+							 % logMake[:2113])
+			else:
+				bot.reply_to(mes, "Решение принятно))")
 	
 	except Exception as e:
 		bot.reply_to(mes, "Не получилось((")
