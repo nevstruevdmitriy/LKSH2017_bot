@@ -347,10 +347,11 @@ def inputMesText(mes):
 	markup.row("/help",  "/MyBot", "/task")
 	userName = mes.from_user.last_name + \
 				  mes.from_user.first_name
+	photo = None
 
 	for i in os.listdir("sempel/"):
 		if str(i) + ".exe" in os.listdir("sempel/%s" % str(i)):
-			markup.row("Вызвать на бой :%s" % i)
+			markup.row("Потребовать сатисфакцию :%s" % i)
 	varTime = time.ctime(time.time())
 
 	out = data.hi
@@ -358,9 +359,11 @@ def inputMesText(mes):
 	fl = 0
 	log = "{%s}:%s:" % (varTime, userName)
 
+
 	if mes.text == "/help":
 		out = data.help_
 		log += "/help\n"
+		photo = open(data.p_help, "rb")
 	elif mes.text == "/all_testing":
 		out = testing()
 	elif mes.text == "/MyBot":
@@ -368,15 +371,19 @@ def inputMesText(mes):
 		try:
 			print (userName)
 			doc = open("sempel/" + userName + "/" + 
-					   userName + ".cpp", "r")
+					   userName + ".cpp", "rb")
 			bot.send_document(mes.chat.id, doc)
 			doc.close()
+			out = "Твоя прелесть)))"
+			photo = open(data.p_gol, "rb")
 		except:
 			out = data.errorFile
+			photo = open(data.p_mybot, "rb")
 	elif mes.text == "/task":
 		log += "/task\n"
 		out = data.task
-	elif "Вызвать на бой :" in mes.text:
+		photo = open(data.p_task, "rb")
+	elif "Потребовать сатисфакцию :" in mes.text:
 		log += mes.text + "\n"
 		anamy = mes.text.split(":")[1]
 		fl = 1
@@ -384,8 +391,12 @@ def inputMesText(mes):
 		log += mes.task + "\n"
 		anamy = mes.text.split("_")[1]
 		fl = 1
+		
+	else:
+		photo = open(data.p_hi, "rb")
 
 	if fl:
+		photo = open(data.p_war, "rb")
 		if not(userName + ".cpp" in os.listdir("sempel/" + userName)):
 			out = data.errorFile
 		elif not(anamy + ".cpp" in os.listdir("sempel/" + anamy)):
@@ -397,13 +408,13 @@ def inputMesText(mes):
 	if warOut != ():
 		out = ""
 		if userName in warOut[0]: 
-			whoIsWin = "ты проиграл(\n"
+			whoIsWin = "you'll be back\n"
 		elif warOut[0] == "Ничья!":
-			whoIsWin = "Ничья!\n"
+			whoIsWin = data.noWins
 		else:
-			whoIsWin = "Ты выйграл!)\n"
+			whoIsWin = "Exterminate!\n"
 		
-		out += whoIsWin
+		out += "Жребий брошен:\n"
 		cmt = 0
 		out += "№: ты -- он\n"
 		for i in range(len(warOut[1])):
@@ -412,6 +423,9 @@ def inputMesText(mes):
 		out += whoIsWin
 		log += whoIsWin + "\n"
 
+	if photo != None:
+		bot.send_photo(mes.chat.id, photo)
+		photo.close()
 	bot.send_message(mes.chat.id, out, reply_markup = markup)
 	writeLog(userName, log)
 	
