@@ -2,7 +2,6 @@
 #include <vector>
 #include <ctime>
 #include <cstdlib>
-#include <sys/types>
 #include <unistd.h>
 
 using namespace std;
