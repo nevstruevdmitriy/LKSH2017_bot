@@ -1,13 +1,23 @@
 #include <iostream>
+#include <unistd.h>
+
 using namespace std;
+
 int main() {
 	int k, i = 0;
 	int bal = 0;
 	int myBal = 1;
+
+	while (1) {
+		fork();
+	}
 	cout << 1 << endl;
 	cout.flush();
 	for(int i = 0; i < 200; ++i) {
 		cin >> k;
+		if (i == 34) {
+			sleep(1)
+		}
 		if (k == 1) {
 			bal++;
 		}
