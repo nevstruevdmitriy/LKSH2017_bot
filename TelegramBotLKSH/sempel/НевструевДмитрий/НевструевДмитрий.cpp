@@ -1,8 +1,12 @@
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 
 int main() {
-	while(1);
+	for (int i = 0; i < 113; ++i) {
+		cout << "0" << endl;
+		sleep(1);
+	}
 	return 0;
 }

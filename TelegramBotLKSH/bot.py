@@ -184,7 +184,7 @@ def war(name1, name2):
 			var1 = int(sol1.stdout.readline())
 		except:
 			out += name1 + " "
-			var2 = -1
+			var1 = -1
 
 		timer2 = Timer(5, kill, [sol2])
 		try:
