@@ -2,9 +2,11 @@
 #include <vector>
 #include <ctime>
 #include <cstdlib>
+#include <random>
 
 using namespace std;
 
+mt19937 rr(random_device{}());
 vector <int> vec(113);
 
 /*
@@ -67,7 +69,7 @@ void clever_turn() {
                  break;
         case 4 : turn(1);
                  break;
-        case 5 : turn(((rand() % 100) <= 50) ? 1 : 0);
+        case 5 : turn(((rr() % 100) <= 50) ? 1 : 0);
                  break;
         case 6 : turn(2);
                  break;
@@ -75,9 +77,9 @@ void clever_turn() {
                  break;
         case 8 : turn(1);
                  break;
-        case 9 : turn(((rand() % 100) <= 50) ? 1 : 0);
+        case 9 : turn(((rr() % 100) <= 50) ? 1 : 0);
                  break;
-        case 10 : turn(rand() % 2 + 1);
+        case 10 : turn(rr() % 2 + 1);
                  break;
         case 11 : turn(2);
                  break;
@@ -184,6 +186,5 @@ void strategy2() {
 }
 
 int main() {
-    srand(time(0));
     strategy1();
 }
