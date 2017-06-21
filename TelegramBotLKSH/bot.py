@@ -134,6 +134,19 @@ def writeLog(name, log):
 	fileLog.write(log)
 	print(log)
 
+def warStep(sol):
+	timer = Timer(0.1, kill, [sol])
+	timer.start()
+	var = -1
+
+	try:
+		var = int(sol.stdout.readline())
+	except:
+		var1 = -1
+
+	timer.cancel()
+	return var
+
 #функция игры, выводит проигравших
 def war(name1, name2):
 	logGame1 = []
@@ -177,23 +190,17 @@ def war(name1, name2):
 
 	for i in range(0, 114):
 #		ставим таймер, что бы не висло
-		timer1 = Timer(5, kill, [sol1])
-		out = ""
-		try:
-			timer1.start()
-			var1 = int(sol1.stdout.readline())
-		except:
-			out += name1 + " "
-			var1 = -1
 
-		timer2 = Timer(5, kill, [sol2])
-		try:
-			timer2.start()
-			var2 = int(sol2.stdout.readline())
-		except:
+		out = ""
+		
+		var1 = warStep(sol1)
+		var2 = warStep(sol2)
+
+		if var1 == -1:
+			out += name1 + " "
+		if var2 == -1:
 			out += name2 + " "
-			var2 = -1
-	
+
 		logGame1.append(var1)
 		logGame2.append(var2)
 		if var1 == 1:
