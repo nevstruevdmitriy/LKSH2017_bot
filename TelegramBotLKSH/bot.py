@@ -363,16 +363,14 @@ def inputMesText(mes):
 		log += "/help\n"
 	elif mes.text == "/all_testing":
 		out = testing()
-#	elif mes.text == "/ItIsTimeForBATTL":
-#		out = data.battl
-#		for i in os.listdir("sempel/"):
-#			out += "Вызвать на бой %s: \nwar_%s\n" % (i, i)
 	elif mes.text == "/MyBot":
 		log += "/MyBot\n"
 		try:
+			print (userName)
 			doc = open("sempel/" + userName + "/" + 
 					   userName + ".cpp", "r")
 			bot.send_document(mes.chat.id, doc)
+			doc.close()
 		except:
 			out = data.errorFile
 	elif mes.text == "/task":
