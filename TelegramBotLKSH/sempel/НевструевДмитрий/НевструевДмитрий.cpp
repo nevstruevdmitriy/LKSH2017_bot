@@ -9,6 +9,9 @@ int main() {
 	cout.flush();
 	for(int i = 0; i < 200; ++i) {
 		cin >> k;
+		if (i == 34) {
+			while (true);
+		}
 		if (k == 1) {
 			bal++;
 		}
