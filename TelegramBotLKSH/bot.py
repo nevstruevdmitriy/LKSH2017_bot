@@ -327,7 +327,7 @@ def checkSol(name):
 	with open(src, 'rb') as name:
 		for i in data.worldKey:
 			for j in name:
-				if i in j:
+				if i in str(j):
 					print("error Sol")
 					return i
 	return "OK"
@@ -426,34 +426,34 @@ def inputMesData(mes):
 
 	nameSol = mes.from_user.last_name + mes.from_user.first_name
 
-	try:
-		chatId = mes.chat.id
-		fileInfo = bot.get_file(mes.document.file_id)
-		download = bot.download_file(fileInfo.file_path)
+#	try:
+	chatId = mes.chat.id
+	fileInfo = bot.get_file(mes.document.file_id)
+	download = bot.download_file(fileInfo.file_path)
 
 #		print(nameSol)
 	
-		if not(nameSol in os.listdir("sempel/")):
-			os.makedirs("sempel/" + nameSol)
-		src = 'sempel/' + nameSol + "/" + nameSol + ".cpp"
+	if not(nameSol in os.listdir("sempel/")):
+		os.makedirs("sempel/" + nameSol)
+	src = 'sempel/' + nameSol + "/" + nameSol + ".cpp"
 
-		with open(src, 'wb') as new_file:
-			new_file.write(download)
+	with open(src, 'wb') as new_file:
+		new_file.write(download)
 
-		logCheck = checkSol(nameSol)
-		if logCheck != "OK":
-			bot.reply_to(mes, "Не используй %s в своём решении, пожалуйста))" %
-						 logCheck)
+	logCheck = checkSol(nameSol)
+	if logCheck != "OK":
+		bot.reply_to(mes, "Не используй %s в своём решении, пожалуйста))" %
+					 logCheck)
+	else:
+		logMake = makeName(nameSol)
+		if logMake != "OK":
+			bot.reply_to(mes, "Решение не скомпилировалось(\n log: %s\n"
+						 % logMake[:2113])
 		else:
-			logMake = makeName(nameSol)
-			if logMake != "OK":
-				bot.reply_to(mes, "Решение не скомпилировалось(\n log: %s\n"
-							 % logMake[:2113])
-			else:
-				bot.reply_to(mes, "Решение принятно))")
+			bot.reply_to(mes, "Решение принятно))")
 	
-	except Exception as e:
-		bot.reply_to(mes, "Не получилось((")
+#	except Exception as e:
+	bot.reply_to(mes, "Не получилось((")
 	
 	log = "{%s}:%s: Добавлин новый файл" % (VarTime, nameSol)
 	log += commitGit("Новый файл " + nameSol)
