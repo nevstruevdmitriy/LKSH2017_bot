@@ -6,9 +6,9 @@ import time
 import random
 import os
 import sys
+import resource
 from threading import Timer
 from telebot import types
-
 
 import data
 
@@ -19,6 +19,9 @@ kill = lambda process: process.kill()
 bot = telebot.TeleBot(data.TOKEN)
 
 raund = 0
+
+def setlimits():
+	resource.setrlimit(resource.RLIMIT_CPU, (64000000, 65000000))
 
 def commitGit(name):
 	pipe1 = subprocess.PIPE
@@ -148,13 +151,13 @@ def war(name1, name2):
 
 	try:
 		sol1 = subprocess.Popen([path1], stdin = pipeIn1, 
-							stdout = pipeOut1)
+							stdout = pipeOut1, preexec_fn = setlimits)
 	except:
 		out += name1
 
 	try:
 		sol2 = subprocess.Popen([path2], stdin = pipeIn2,
-							stdout = pipeOut2)
+							stdout = pipeOut2, preexec_fn = setlimits)
 	except:
 		out += name2
 
@@ -257,7 +260,8 @@ def testing():
 	ask = []
 	
 	for i in os.listdir("sempel/"):
-		player.append(i)
+		if str(i) + ".exe" in os.listdir("sempel/%s" % str(i)):
+			player.append(i)
 
 	for i in range(0, len(player)):
 		ask.append([])
@@ -330,8 +334,8 @@ def inputMesText(mes):
 				  mes.from_user.first_name
 
 	for i in os.listdir("sempel/"):
-		if i + ".exe" in os.listdir("sempel/%s" % )
-		markup.row("Вызвать на бой :%s" % i)
+		if str(i) + ".exe" in os.listdir("sempel/%s" % str(i)):
+			markup.row("Вызвать на бой :%s" % i)
 	varTime = time.ctime(time.time())
 
 	out = data.hi
