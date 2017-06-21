@@ -1,10 +1,18 @@
 #include <iostream>
+#include <random>
 
 using namespace std;
 
+mt19937 rr(random_device{}());
+
 int main() {
-    int c1 = 1, c2 = 0;
-    while (true) {
-        cout << 0 << endl;
-    }
+	for (int i = 1; i <= 112; ++i) {
+		if (rr() % 10 == 2) {
+			cout << 0 << endl;
+		}
+		else {
+			cout << 1 << endl;
+		}
+	}
+	cout << 3 << endl;
 }
