@@ -65,7 +65,7 @@ void strategy2() {
         int c = c1 * 4 + c2;
         if (i == 112) {
             if (c1) {
-                turn(2);
+                turn(max(c1, 2));
             } else {
                 turn(0);
             }
