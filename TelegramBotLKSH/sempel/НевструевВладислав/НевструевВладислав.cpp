@@ -105,8 +105,6 @@ void strategy1() {
         if (c1 == 3) {
             if (c2 % 2 == 0) {
                 turn(3);
-            } else {
-                turn(0);
             }
         }
         if (c2 == 0) {
