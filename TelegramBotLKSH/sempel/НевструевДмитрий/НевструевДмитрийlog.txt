@@ -144,3 +144,6 @@ Exterminate!
 war KozinovAlex НевструевДмитрий
 Exterminate!
 
+{Thu Jun 22 02:48:02 2017}:НевструевДмитрий: Добавлин новый файл
+commit:
+b''

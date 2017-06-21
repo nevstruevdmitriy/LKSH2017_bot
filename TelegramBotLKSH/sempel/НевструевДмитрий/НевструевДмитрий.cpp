@@ -1,6 +1,7 @@
 #include <iostream>
-#include <unistd.h>
+
 using namespace std;
+
 int main() {
 	int k, i = 0;
 	int bal = 0;
