@@ -125,7 +125,7 @@ void strategy1() {
                 h[ptr - start] = vec[ptr];
             }
             vector <int> g = prf(h);
-            if (pr.size() * (h.size() - g.back()) < h.size() *(pr.size() - mx)) {
+            if (pr.size() * (h.size() - g.back()) < h.size() * (pr.size() - mx)) {
                 mx = g.back();
                 pr = h;
             }
@@ -185,5 +185,5 @@ void strategy2() {
 
 int main() {
     srand(time(0));
-    strategy2();
+    strategy1();
 }
