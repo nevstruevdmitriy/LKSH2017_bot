@@ -19,7 +19,7 @@ int c1 = 0, c2 = 0;
 
 void turn(int a) {
     if (!fl) {
-        //cout << a << endl;
+        cout << a << endl;
         fl = 1;
         if (a == 1) {
             c1 = min(c1 + 1, 3);
@@ -31,7 +31,7 @@ void turn(int a) {
 }
 
 void get(int i) {
-    //cin >> vec[i];
+    cin >> vec[i];
     if (vec[i] == 1) {
         c2 = min(c2 + 1, 3);
     }
@@ -184,6 +184,7 @@ void strategy2() {
 }
 
 int main() {
+    turn(3);
     srand(time(0));
     strategy1();
 }
