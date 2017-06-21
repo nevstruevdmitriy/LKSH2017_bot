@@ -96,6 +96,8 @@ def smail(var):
 		return u'\U0001F52B'
 	if var == 3:
 		return u'\U0001F4A3'
+	if var == -1:
+		return u'\U0000203C'
 	return 'error'
 
 #По имени файла-решения игрока создаёт исполняемый файл
@@ -179,6 +181,7 @@ def war(name1, name2):
 			var1 = int(sol1.stdout.readline())
 		except:
 			out += name1 + " "
+			var2 = -1
 
 		timer2 = Timer(5, kill, [sol2])
 		try:
@@ -186,9 +189,7 @@ def war(name1, name2):
 			var2 = int(sol2.stdout.readline())
 		except:
 			out += name2 + " "
-
-		if out != "":
-			break
+			var2 = -1
 	
 		logGame1.append(var1)
 		logGame2.append(var2)
@@ -237,12 +238,12 @@ def war(name1, name2):
 			sol1.stdin.write((str(var2) + "\n").encode())
 			sol1.stdin.flush()
 		except:
-			out += name1
+#			out += name1
 		try:
 			sol2.stdin.write((str(var1) + "\n").encode())
 			sol2.stdin.flush()
 		except:
-			out += name2
+#			out += name2
 
 		if out != "":
 			break
