@@ -163,6 +163,7 @@ void strategy1() {
                 turn(1);
             }
         }
+        get(i);
     }
 }
 
