@@ -330,6 +330,7 @@ def inputMesText(mes):
 				  mes.from_user.first_name
 
 	for i in os.listdir("sempel/"):
+		if i + ".exe" in os.listdir("sempel/%s" % )
 		markup.row("Вызвать на бой :%s" % i)
 	varTime = time.ctime(time.time())
 

