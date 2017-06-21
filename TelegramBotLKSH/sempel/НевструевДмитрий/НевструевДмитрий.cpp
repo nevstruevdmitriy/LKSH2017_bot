@@ -1,14 +1,4 @@
 #include <iostream>
-#include <unistd.h>
-
-
-/*
-0 - çàùèòà
-1 - çàðÿäêà
-2 - áýíã
-3 - ÁÝÍÃ
-*/
-
 
 using namespace std;
 
