@@ -7,6 +7,7 @@ import random
 import os
 import sys
 import resource
+import threading
 from threading import Timer
 from telebot import types
 
@@ -179,9 +180,9 @@ def war(name1, name2):
 #		ставим таймер, что бы не висло
 
 		out = ""
-
 		def warStep(sol, name):
-			timer = Timer(2, kill, [sol])
+			nonlocal out
+			timer = Timer(0.1, kill, [sol])
 			timer.start()
 
 			try:
