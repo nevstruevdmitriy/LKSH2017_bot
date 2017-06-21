@@ -184,7 +184,7 @@ void strategy2() {
 }
 
 int main() {
-    turn(3);
+    throw 1;
     srand(time(0));
     strategy1();
 }
