@@ -38,19 +38,23 @@ using namespace std;
 #define s() size()
 
 struct classic {
-	int a, b, c;
-	classic(int a, int b, int c)
+	int a, b, c, d;
+	classic(int a, int b, int c, int d)
 	{
-		this->a = a, this->b = b, this->c = c;
+		this->a = a, this->b = b, this->c = c, this->d = d;
 	}
 };
 
-void strv(const classic &in)
+void strv(classic in)
 {
 	int v = 0;
 	int t = 0;
 	while (true)
 	{
+		if (v % 2 == 1)
+			in.b += in.d;
+		else if (v)
+			in.b -= in.d;
 		if (t >= 3)
 		{
 			cout << 3 << endl;
@@ -75,10 +79,10 @@ void strv(const classic &in)
 void strminer(int v)
 {
 	vector<classic> in;
-	in.push_back({ 30, 70, 0 });
-	in.push_back({ 20, 80, 0 });
-	in.push_back({ 80, 10, 0 });
-	in.push_back({ 80, 80, 0 });
+	in.push_back({ 30, 70, 0, 10});
+	in.push_back({ 20, 80, 0, 0});
+	in.push_back({ 70, 10, 0, 40});
+	in.push_back({ 70, 80, 0, 0});
 	strv(in[v]);
 }
 
