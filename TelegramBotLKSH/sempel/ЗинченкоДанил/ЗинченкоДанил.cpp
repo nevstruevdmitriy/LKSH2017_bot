@@ -38,13 +38,21 @@ using namespace std;
 #define s() size()
 
 int main() {
+	srand(time(NULL));
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.setf(ios::fixed);
 	cout.precision(0);
-	cout << 1 << endl;
+	int t = 0;
 	while (true)
 	{
-		cout << 2 << endl;
+		if (rand() % 2)
+			cout << 0 << endl;
+		else
+			cout << 1 << endl, t++;
+		if (t >= 3)
+			cout << 3 << endl;
+		if (!rand() % 3 && t != 0)
+			cout << 2 << endl, t--;
 	}
 }
