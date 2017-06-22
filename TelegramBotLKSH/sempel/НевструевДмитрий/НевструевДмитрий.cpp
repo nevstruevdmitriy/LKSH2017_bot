@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	srannd(time(0));
+	srand(time(0));
 	cout << 0 << endl;
 	cout.flush();
 	
