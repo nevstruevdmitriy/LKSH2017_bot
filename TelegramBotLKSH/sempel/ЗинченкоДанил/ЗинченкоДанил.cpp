@@ -59,7 +59,7 @@ int main() {
 			cout << 3 << endl;
 			t -= 3;
 		}
-		if (rand() % 100 > 55 && t > 0)
+		if (rand() % 100 > 70 && t > 0)
 		{
 			cout << 2 << endl; 
 			t--;
