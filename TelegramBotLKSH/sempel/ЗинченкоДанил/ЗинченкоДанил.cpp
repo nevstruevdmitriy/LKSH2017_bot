@@ -42,11 +42,9 @@ int main() {
 	cin.tie(NULL);
 	cout.setf(ios::fixed);
 	cout.precision(0);
+	cout << 1 << endl;
 	while (true)
 	{
-		cout << 0 << endl;
-		cout << 1 << endl;
 		cout << 2 << endl;
-		cout << 3 << endl;
 	}
 }
