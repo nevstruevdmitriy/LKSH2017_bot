@@ -1,33 +1,26 @@
 #include <iostream>
-#include <unistd.h>
+#include <time.h>
+
 using namespace std;
+
 int main() {
-	int k, i = 0;
-	int bal = 0;
-	int myBal = 1;
-	cout << 1 << endl;
+	srannd(time(0));
+	cout << 0 << endl;
 	cout.flush();
-	for(int i = 0; i < 200; ++i) {
-		cin >> k;
-		if (k == 1) {
-			bal++;
-		}
-		if (k == 3 || k == 2) {
-			bal = 0;
-		}
-		if (myBal == 3) {
+	
+	for (int i = 0; i < 100; ++i) {
+		if (rand() % 5 == 0) {
 			cout << 3 << endl;
 			cout.flush();
-			return 0;
-		}
-		if (bal == 0 || i / myBal > 25) {
-			myBal++;
-			cout << "1" << endl;
+		} else if (rand() % 5 == 1) {
+			cout << 1 << endl;
 			cout.flush();
 		} else {
 			cout << 0 << endl;
-			cout.flush();
 		}
 	}
+
+	cout << 3 << endl;
+	cout.flush();
 	return 0;
 }
