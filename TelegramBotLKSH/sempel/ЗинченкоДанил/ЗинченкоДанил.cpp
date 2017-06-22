@@ -37,33 +37,56 @@ using namespace std;
 #define mp make_pair
 #define s() size()
 
-int main() {
-	srand(time(NULL));
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL);
-	cout.setf(ios::fixed);
-	cout.precision(0);
+struct classic {
+	int a, b, c;
+	classic(int a, int b, int c)
+	{
+		this->a = a, this->b = b, this->c = c;
+	}
+};
+
+void strv(const classic &in)
+{
 	int v = 0;
 	int t = 0;
 	while (true)
 	{
-		if (v && rand() % 100 >= 30)
+		if (t >= 3)
+		{
+			cout << 3 << endl;
+			t -= 3;
+		}
+		if (v && rand() % 100 >= in.a) // a
 			cout << 0 << endl;
 		else
 		{
 			cout << 1 << endl;
 			t++;
 		}
-		if (t >= 3)
+		if (rand() % 100 >= in.b && t > in.c) // b, c
 		{
-			cout << 3 << endl;
-			t -= 3;
-		}
-		if (rand() % 100 > 70 && t > 0)
-		{
-			cout << 2 << endl; 
+			cout << 2 << endl;
 			t--;
 		}
 		v++;
 	}
+}
+
+void strminer(int v)
+{
+	vector<classic> in;
+	in.push_back({ 30, 70, 0 });
+	in.push_back({ 20, 80, 0 });
+	in.push_back({ 80, 10, 0 });
+	in.push_back({ 80, 80, 0 });
+	strv(in[v]);
+}
+
+int main() {
+	srand(time(NULL));
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.setf(ios::fixed);
+	cout.precision(0);
+	strminer(rand() % 4);
 }
