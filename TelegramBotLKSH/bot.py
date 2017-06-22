@@ -272,23 +272,20 @@ def testing():
 		ask.append([])
 		for j in range(0, len(player)):
 			ask[i].append([])
-		
 
 	for i in range(0, len(player)):
-		for j in range(i, len(player)):
-			ask[i][j] = 0
-			ask[j][i] = 0
-			if i == j:
-				ask[i][j] = 0
-			else:
-				for kol in range(1, 20):
-					game = war(player[i], player[j])
-					if (player[i] in game[0]) and not(player[j] in game[0]):
-						ask[j][i] += 1
-					if (player[j] in game[0]) and not(player[i] in game[0]):
-						ask[i][j] += 1
-					print("--> %d %d kol = %d\n" % (i, j, kol))
-			print("resylt %d %d = %d/%d\n" % (i, j, ask[i][j], ask[j][i]))
+		for j in range(0, len(player)):
+			ask[i][j] = 0		
+
+	for kol in range(0, 20):
+		for i in range(0, len(player)):
+			for j in range(i + 1, len(player)):
+				game = war(player[i], player[j])
+				if (player[i] in game[0]) and not(player[j] in game[0]):
+					ask[j][i] += 1
+				if (player[j] in game[0]) and not(player[i] in game[0]):
+					ask[i][j] += 1
+				print("--> %d %d kol = %d\n" % (i, j, kol))
 	summa = []
 	for i in range(0, len(player)):
 		teksum = 0
