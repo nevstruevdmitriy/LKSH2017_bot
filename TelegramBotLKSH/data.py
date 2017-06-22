@@ -1,4 +1,3 @@
-TOKEN = "407392955:AAGoB3nntcB6v66kFhS1GVr20alMgJr8ngQ"
 hi = \
 """
 Молви /help и войди!))))))

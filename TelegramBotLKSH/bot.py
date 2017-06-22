@@ -10,6 +10,7 @@ import resource
 import threading
 from threading import Timer
 from telebot import types
+import myToken
 
 import data
 
@@ -17,7 +18,7 @@ import data
 kill = lambda process: process.kill()
 
 #теперь bot - структура взаимодействия с Телеграмом
-bot = telebot.TeleBot(data.TOKEN)
+bot = telebot.TeleBot(myToken.TOKEN)
 
 raund = 0
 
