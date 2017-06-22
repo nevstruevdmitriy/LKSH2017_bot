@@ -10,7 +10,7 @@ int main() {
 	
 	for (int i = 0; i < 100; ++i) {
 		if (rand() % 5 == 0) {
-			cout << 3 << endl;
+			cout << 2 << endl;
 			cout.flush();
 		} else if (rand() % 5 == 1) {
 			cout << 1 << endl;
