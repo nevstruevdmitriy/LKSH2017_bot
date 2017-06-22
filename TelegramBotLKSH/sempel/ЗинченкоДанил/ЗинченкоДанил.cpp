@@ -46,13 +46,19 @@ int main() {
 	int t = 0;
 	while (true)
 	{
-		if (rand() % 2)
+		if (rand() % 100 >= 60)
 			cout << 0 << endl;
 		else
-			cout << 1 << endl, t++;
+		{
+			cout << 1 << endl;
+			t++;
+		}
 		if (t >= 3)
 			cout << 3 << endl;
-		if (!rand() % 3 && t != 0)
-			cout << 2 << endl, t--;
+		if (!rand() % 3 && t > 0)
+		{
+			cout << 2 << endl; 
+			t--;
+		}
 	}
 }
