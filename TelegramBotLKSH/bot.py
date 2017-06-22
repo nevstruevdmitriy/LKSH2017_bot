@@ -276,17 +276,19 @@ def testing():
 
 	for i in range(0, len(player)):
 		for j in range(i, len(player)):
-			game = war(player[i], player[j])
-			if (player[i] in game[0]) and not(player[j] in game[0]):
-				ask[j][i] = 1
-			else:
-				ask[j][i] = 0
-			if (player[j] in game[0]) and not(player[i] in game[0]):
-				ask[i][j] = 1
-			else:
+			ask[i][j] = 0
+			ask[j][i] = 0
+			if i == j:
 				ask[i][j] = 0
-
-			print(i, j)
+			else:
+				for kol in range(1, 20):
+					game = war(player[i], player[j])
+					if (player[i] in game[0]) and not(player[j] in game[0]):
+						ask[j][i] += 1
+					if (player[j] in game[0]) and not(player[i] in game[0]):
+						ask[i][j] += 1
+					print("--> %d %d kol = %d\n" % (i, j, kol))
+			print("resylt %d %d = %d/%d\n" % (i, j, ask[i][j], ask[j][i]))
 	summa = []
 	for i in range(0, len(player)):
 		teksum = 0
@@ -306,11 +308,16 @@ def testing():
 				(str(ind), summa[i][1], summa[i][0])
 
 
-	out += "Cводная таблица:\n"
+	out += "Cводная таблица:\n%s" % ("".center(3, "X"))
 
 	for i in range(0, len(player)):
+		out += ("%d" % i).center(5, " ")
+	out += "\n"
+
+	for i in range(0, len(player)):
+		out += ("%d" % i).rjust(3, " ")
 		for j in range(0, len(player)):
-			out += str(ask[i][j])
+			out += str(ask[i][j]).center(5, " ")
 		out += "\n"
 	
 	out += "\n"
