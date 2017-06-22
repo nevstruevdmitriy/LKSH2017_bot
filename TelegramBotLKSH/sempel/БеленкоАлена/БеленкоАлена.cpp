@@ -14,13 +14,13 @@ int main() {
 	while (true) {
 		if (i <= 6)
 		{
-			cout << a[i];
+			cout << a[i]<<endl;
 			i++;
 		}
 		else
 		{
 			i = 1;
-			cout << a[i];
+			cout << a[i]<<endl;
 		}
 		cout.flush();
 		cin >> turn;
