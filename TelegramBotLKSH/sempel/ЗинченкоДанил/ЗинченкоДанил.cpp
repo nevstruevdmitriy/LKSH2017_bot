@@ -74,6 +74,16 @@ void strv(classic in)
 			t++;
 		}
 		v++;
+		if (v % 2 == 1)
+		{
+			in.a -= in.e;
+			in.b += in.d;
+		}
+		else if (v)
+		{
+			in.b -= in.d;
+			in.a += in.e;
+		}
 		if (rand() % 100 >= in.b && t > in.c) // b, c
 		{
 			cout << 2 << endl;
