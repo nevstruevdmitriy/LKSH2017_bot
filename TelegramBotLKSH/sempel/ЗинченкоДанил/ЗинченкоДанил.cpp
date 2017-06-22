@@ -43,10 +43,11 @@ int main() {
 	cin.tie(NULL);
 	cout.setf(ios::fixed);
 	cout.precision(0);
+	int v = 0;
 	int t = 0;
 	while (true)
 	{
-		if (rand() % 100 >= 60)
+		if (v && rand() % 100 >= 60)
 			cout << 0 << endl;
 		else
 		{
@@ -63,5 +64,6 @@ int main() {
 			cout << 2 << endl; 
 			t--;
 		}
+		v++;
 	}
 }
