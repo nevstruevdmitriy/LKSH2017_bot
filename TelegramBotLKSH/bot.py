@@ -97,7 +97,7 @@ def writeResult(out, ans, player):
 		outR += (player[i][:13]).rjust(13, " ")
 		for j in range(0, len(player)):
 			outR += "|" + str(ans[i][j]).rjust(2, "0")
-			outR += "\n"
+		outR += "\n"
 
 	outR += "\n"
 
