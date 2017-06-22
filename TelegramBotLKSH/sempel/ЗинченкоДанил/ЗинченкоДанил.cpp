@@ -73,12 +73,13 @@ void strv(classic in)
 			cout << 1 << endl;
 			t++;
 		}
+		v++;
 		if (rand() % 100 >= in.b && t > in.c) // b, c
 		{
 			cout << 2 << endl;
 			t--;
+			v++;
 		}
-		v++;
 	}
 }
 
