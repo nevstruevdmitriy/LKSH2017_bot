@@ -100,7 +100,7 @@ void strminer(int v)
 	in.push_back({ 20, 80, 0, 0, 5});
 	in.push_back({ 70, 10, 0, 40, 25});
 	in.push_back({ 70, 80, 0, 0, 25});
-	strv(in[v]);
+	strv(in[0]);
 }
 
 int main() {
