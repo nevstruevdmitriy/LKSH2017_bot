@@ -47,7 +47,7 @@ int main() {
 	int t = 0;
 	while (true)
 	{
-		if (v && rand() % 100 >= 60)
+		if (v && rand() % 100 >= 30)
 			cout << 0 << endl;
 		else
 		{
