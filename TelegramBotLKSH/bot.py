@@ -311,13 +311,13 @@ def testing():
 	out += "Cводная таблица:\n%s" % ("".center(3, "X"))
 
 	for i in range(0, len(player)):
-		out += ("%d" % i).center(5, "X")
+		out += ("%d" % i).center(4, "_")
 	out += "\n"
 
 	for i in range(0, len(player)):
-		out += ("%d" % i).rjust(3, "X")
+		out += ("%d" % i).rjust(2, "_")
 		for j in range(0, len(player)):
-			out += str(ask[i][j]).center(5, "X")
+			out += str(ask[i][j]).center(4, "_")
 		out += "\n"
 	
 	out += "\n"
