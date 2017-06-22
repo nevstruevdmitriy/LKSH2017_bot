@@ -76,7 +76,7 @@ def start():
 		raund = int(result.readline())
 		result.close()
 
-def writeResult(out):
+def writeResult(out, ans, player):
 	global raund
 
 	writeResult_nom(raund + 1)
@@ -87,6 +87,24 @@ def writeResult(out):
 	for i in out:
 		result.write("%s %d\n" % (i[1], i[0]))
 	result.close()
+
+	outR = "".center(13, "-")	
+
+	for i in range(0, len(player)):
+		outR += "|" + ("%d" % i).rjust(2, "0")
+    outR += "\n"
+
+    for i in range(0, len(player)):
+        out += ("%s" % player[i][:13]).rjust(" ", "0")
+        for j in range(0, len(player)):
+            out += "|" + str(ask[i][j]).rjust(2, "0")
+        out += "\n"
+
+    out += "\n"
+
+    for i in range(0, len(player)):
+        out += "%d столбец принадлежит %s\n" % (i, player[i])
+
 
 	raund += 1
 	
