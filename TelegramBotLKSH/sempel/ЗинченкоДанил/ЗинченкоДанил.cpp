@@ -54,8 +54,11 @@ int main() {
 			t++;
 		}
 		if (t >= 3)
+		{
 			cout << 3 << endl;
-		if (!rand() % 3 && t > 0)
+			t -= 3;
+		}
+		if (rand() % 100 > 55 && t > 0)
 		{
 			cout << 2 << endl; 
 			t--;
