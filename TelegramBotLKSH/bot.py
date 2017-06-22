@@ -112,8 +112,8 @@ def makeSol(name1):
 	make = subprocess.Popen(["g++", pathName + ".cpp", "-std=gnu++11", "-o",
 							pathName + ".exe"], stderr = pipe)
 #   ставим таймер, что бы не висло
-	timer = Timer(5, kill, [make])
-	timer.start()
+#	timer = Timer(5, kill, [make])
+#	timer.start()
 
 	make.wait()
 	in_ = str(make.stderr.read())
@@ -462,7 +462,7 @@ def inputMesData(mes):
 				bot.reply_to(mes, "Решение не скомпилировалось(\n log: %s\n"
 							 % logMake[:2113])
 			else:
-				bot.reply_to(mes, "Решение принятно))")
+				bot.reply_to(mes, "Решение принято))")
 	
 	except Exception as e:
 		bot.reply_to(mes, "Не получилось((")
