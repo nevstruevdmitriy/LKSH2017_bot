@@ -86,26 +86,26 @@ def writeResult(out, ans, player):
 	result = open("result/" + readResult, "w")
 	for i in out:
 		result.write("%s %d\n" % (i[1], i[0]))
-	result.close()
 
 	outR = "".center(13, "-")	
 
 	for i in range(0, len(player)):
 		outR += "|" + ("%d" % i).rjust(2, "0")
-    outR += "\n"
+	outR += "\n"
 
-    for i in range(0, len(player)):
-        out += ("%s" % player[i][:13]).rjust(" ", "0")
-        for j in range(0, len(player)):
-            out += "|" + str(ask[i][j]).rjust(2, "0")
-        out += "\n"
+	for i in range(0, len(player)):
+		outR += (player[i][:13]).rjust(13, " ")
+		for j in range(0, len(player)):
+			outR += "|" + str(ans[i][j]).rjust(2, "0")
+			outR += "\n"
 
-    out += "\n"
+	outR += "\n"
 
-    for i in range(0, len(player)):
-        out += "%d столбец принадлежит %s\n" % (i, player[i])
+	for i in range(0, len(player)):
+		outR += "%d столбец принадлежит %s\n" % (i, player[i])
 
-
+	result.write(outR)
+	result.close()
 	raund += 1
 	
 
@@ -340,7 +340,7 @@ def testing():
 	for i in range(0, len(player)):
 		out += "%d линия принадлежит %s\n" % (i, player[i])
 
-	writeResult(summa)
+	writeResult(summa, ask, player)
 	commitGit("all_testing")
 	return out
 
