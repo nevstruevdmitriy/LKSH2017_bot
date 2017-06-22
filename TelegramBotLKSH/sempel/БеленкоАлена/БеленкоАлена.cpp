@@ -1,24 +1,26 @@
 #include <iostream>
 
 using namespace std;
-
+int a[114];
 int main() {
+	a[1] = 1;
+	a[2] = 2;
+	a[3] = 1;
+	a[4] = 1;
+	a[5] = 1;
+	a[6] = 3;
+	int i = 1;
 	int turn, cnt = 0;
 	while (true) {
-		int k = rand() % 2;
-		if (cnt >= 3)
+		if (i <= 6)
 		{
-			cout << 3 << endl;
-			cnt -= 3;
+			cout << a[i];
+			i++;
 		}
 		else
 		{
-			cout << k << endl;
-		}
-
-		if (k == 1)
-		{
-			cnt++;
+			i = 1;
+			cout << a[i];
 		}
 		cout.flush();
 		cin >> turn;
