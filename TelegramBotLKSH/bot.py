@@ -329,6 +329,8 @@ def testing():
 				if (player[j] in game[0]) and not(player[i] in game[0]):
 					ask[i][j] += 1
 				print("--> %d %d kol = %d\n" % (i, j, kol))
+		time.sleep(1)
+
 	summa = []
 	for i in range(0, len(player)):
 		teksum = 0
