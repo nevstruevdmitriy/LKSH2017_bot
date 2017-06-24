@@ -519,7 +519,6 @@ def inputMesData(mes):
 	except Exception as e:
 		bot.reply_to(mes, "Не получилось((")
 	
-	tellAllId(nameSol)
 	log = "{%s}:%s: Добавлин новый файл" % (VarTime, nameSol)
 	log += commitGit("Новый файл " + nameSol)
 	writeLog(nameSol, log)
