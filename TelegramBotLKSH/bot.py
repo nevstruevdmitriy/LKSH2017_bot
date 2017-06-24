@@ -73,9 +73,14 @@ def tellAllId(userName):
 	for i in os.listdir("sempel/"):
 		if "%s_id.txt" % i in os.listdir("sempel/%s/" % i):
 			id_ = open("sempel/%s/%s_id.txt" % (i, i), "r")
+			photo = open(data.p_update, "rb")
+
 			idPuple = int(id_.readline())
+
 			id_.close()
-#			bot.send_photo(idPuple, data.p_update)
+
+			bot.send_photo(idPuple, photo)
+			photo.close()
 			bot.send_message(idPuple, "%s Обновил решение!" % userName)
 
 def start():
