@@ -25,3 +25,5 @@ Exterminate!
 war БеленкоАлена ТерзиянГрант
 Exterminate!
 
+{Sat Jun 24 14:03:51 2017}:ТерзиянГрант:/help
+{Sat Jun 24 14:03:55 2017}:ТерзиянГрант:/MyBot
