@@ -94,6 +94,44 @@ void clever_turn() {
     }
 }
 
+void clever_fixed_turn() {
+    int c = 4 * c1 + c2;
+    switch (c) {
+        case 0 : turn(1);
+                 break;
+        case 1 : turn(0);
+                 break;
+        case 2 : turn(1);
+                 break;
+        case 3 : turn(1);
+                 break;
+        case 4 : turn(1);
+                 break;
+        case 5 : turn(0);
+                 break;
+        case 6 : turn(2);
+                 break;
+        case 7 : turn(2);
+                 break;
+        case 8 : turn(1);
+                 break;
+        case 9 : turn(1);
+                 break;
+        case 10 : turn(2);
+                 break;
+        case 11 : turn(2);
+                 break;
+        case 12 : turn(3);
+                 break;
+        case 13 : turn(0);
+                 break;
+        case 14 : turn(3);
+                 break;
+        case 15 : turn(3);
+                 break;
+    }
+}
+
 void strategy1() {
     for (int i = 0; i < 113; ++i) {
         fl = 0;
@@ -180,11 +218,11 @@ void strategy2() {
                 turn(0);
             }
         }
-        clever_turn();
+        clever_fixed_turn();
         get(i);
     }
 }
 
 int main() {
-    strategy1();
+    strategy2();
 }
