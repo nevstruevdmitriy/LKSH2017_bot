@@ -85,7 +85,7 @@ void clever_turn() {
                  break;
         case 12 : turn(3);
                  break;
-        case 13 : turn(0);
+        case 13 : turn(3);
                  break;
         case 14 : turn(3);
                  break;
@@ -115,7 +115,7 @@ void clever_fixed_turn() {
                  break;
         case 8 : turn(1);
                  break;
-        case 9 : turn(1);
+        case 9 : turn(0);
                  break;
         case 10 : turn(2);
                  break;
@@ -123,7 +123,7 @@ void clever_fixed_turn() {
                  break;
         case 12 : turn(3);
                  break;
-        case 13 : turn(0);
+        case 13 : turn(3);
                  break;
         case 14 : turn(3);
                  break;
