@@ -75,7 +75,7 @@ def tellAllId(userName):
 			id_ = open("sempel/%s/%s_id.txt" % (i, i), "r")
 			idPuple = int(id_.readline())
 			id_.close()
-			bot.send_photo(idPuple, data.p_update)
+#			bot.send_photo(idPuple, data.p_update)
 			bot.send_message(idPuple, "%s Обновил решение!" % userName)
 
 def start():
@@ -508,12 +508,13 @@ def inputMesData(mes):
 				bot.reply_to(mes, "Решение не скомпилировалось(\n log: %s\n"
 							 % logMake[:2113])
 			else:
+				tellAllId(nameSol)
 				bot.reply_to(mes, "Решение принято))")
-		tellAllId(nameSol)
 
 	except Exception as e:
 		bot.reply_to(mes, "Не получилось((")
 	
+	tellAllId(nameSol)
 	log = "{%s}:%s: Добавлин новый файл" % (VarTime, nameSol)
 	log += commitGit("Новый файл " + nameSol)
 	writeLog(nameSol, log)
