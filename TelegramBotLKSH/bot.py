@@ -370,6 +370,9 @@ def inputMesText(mes):
 				  mes.from_user.first_name
 	photo = None
 
+	if not(userName in os.listdir("sempel/")):
+		os.makedirs("sempel/" + userName)
+
 	for i in os.listdir("sempel/"):
 		if str(i) + ".exe" in os.listdir("sempel/%s" % str(i)):
 			markup.row("Потребовать сатисфакцию :%s" % i)
