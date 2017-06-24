@@ -297,6 +297,9 @@ def war(name1, name2):
 			break
 	if out == "":
 		out = "Ничья!"
+	
+	sol1.kill()
+	sol2.kill()
 	return (out, logGame1, logGame2)
 
 
@@ -466,6 +469,9 @@ def inputMesText(mes):
 		out += "Жребий брошен:\n"
 		cmt = 0
 		out += "№: ты -- он\n"
+		if len(warOut[1]) == 0:
+			print("ERRRRORRRR!!!XXX")
+
 		for i in range(len(warOut[1])):
 			out += "%d: %s -- %s\n" % \
 					(i, smail(warOut[2][i]), smail(warOut[1][i]))
