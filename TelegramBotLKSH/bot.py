@@ -60,6 +60,24 @@ def writeResult_nom(raund):
 	result.write("%d\n" % raund)
 	result.close()
 
+def writeId(userName, id_):
+	if not(userName in os.listdir("sempel/")):
+		os.makedirs("sempel/" + userName)
+	
+	fid_ = open("sempel/%s/%s_id.txt" % (userName, userName), "w")
+	fid_.write("%d\n" % id_)
+	fid_.close()
+
+def tellAllId(userName):
+	global bot
+	for i in os.listdir("sempel/"):
+		if "%s_id.txt" % i in os.listdir("sempel/%s/" % i):
+			id_ = open("sempel/%s/%s_id.txt" % (i, i), "r")
+			idPuple = int(id_.readline())
+			id_.close()
+			bot.send_photo(idPuple, data.p_update)
+			bot.send_message(idPuple, "%s Обновил решение!" % userName)
+
 def start():
 	global raund
 	resultName = "results_nom.txt"
@@ -373,6 +391,8 @@ def inputMesText(mes):
 	if not(userName in os.listdir("sempel/")):
 		os.makedirs("sempel/" + userName)
 
+	writeId(userName, mes.chat.id)
+
 	for i in os.listdir("sempel/"):
 		if str(i) + ".exe" in os.listdir("sempel/%s" % str(i)):
 			markup.row("Потребовать сатисфакцию :%s" % i)
@@ -462,6 +482,8 @@ def inputMesData(mes):
 
 	nameSol = mes.from_user.last_name + mes.from_user.first_name
 
+	writeId(nameSol, mes.chat.id)
+
 	try:
 		chatId = mes.chat.id
 		fileInfo = bot.get_file(mes.document.file_id)
@@ -487,7 +509,8 @@ def inputMesData(mes):
 							 % logMake[:2113])
 			else:
 				bot.reply_to(mes, "Решение принято))")
-	
+		tellAllId(nameSol)
+
 	except Exception as e:
 		bot.reply_to(mes, "Не получилось((")
 	

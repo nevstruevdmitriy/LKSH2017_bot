@@ -84,12 +84,15 @@ noWins = \
 Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
 """
 
-p_hi    = "images/hi.jpg"
-p_mybot = "images/mybot.jpg"
-p_task  = "images/task.jpg"
-p_war   = "images/war.jpg"
-p_gol   = "images/gol.jpg"
-p_help  = "images/help.jpg"
+p_hi     = "images/hi.jpg"
+p_mybot  = "images/mybot.jpg"
+p_task   = "images/task.jpg"
+p_war    = "images/war.jpg"
+p_gol    = "images/gol.jpg"
+p_help   = "images/help.jpg"
+p_update = "images/update.jpg"
 
+	
 
 worldKey = ["unistd", "thread", "system"]
+
