@@ -533,4 +533,9 @@ def inputMesData(mes):
 
 if __name__ == "__main__":
 	start()
-	bot.polling(none_stop = True)
+	while(True):
+		try:
+			bot.polling(none_stop = True)
+		except:
+			print("Internet ERRORRR!!!\n")
+			time.sleep(3)
