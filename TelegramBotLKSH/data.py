@@ -90,7 +90,7 @@ p_task   = "images/task.jpg"
 p_war    = "images/war.jpg"
 p_gol    = "images/gol.jpg"
 p_help   = "images/help.jpg"
-p_update = "images/hi.jpg"
+p_update = "images/gol.jpg"
 
 	
 
