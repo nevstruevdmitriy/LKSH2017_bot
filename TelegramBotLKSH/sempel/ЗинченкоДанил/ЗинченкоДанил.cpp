@@ -109,7 +109,7 @@ int main() {
 		cin >> xd;
 		if (xd == 0)
 		{
-			//func(1);
+			func(1);
 			func(2);
 		}
 		if (xd == 1)
@@ -125,7 +125,7 @@ int main() {
 			globalpatron2--;
 		}
 		if (globalpatron2 == 0)
-			v[0] = 10, v[1] = 45, v[2] = 45;
+			v[0] = 0, v[1] = 35, v[2] = 65;
 		bang();
 	}
 }
