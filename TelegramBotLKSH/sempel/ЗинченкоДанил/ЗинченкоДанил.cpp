@@ -109,7 +109,7 @@ int main() {
 		cin >> xd;
 		if (xd == 0)
 		{
-			func(1);
+			//func(1);
 			func(2);
 		}
 		if (xd == 1)
