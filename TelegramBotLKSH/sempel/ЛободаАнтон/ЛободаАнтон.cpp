@@ -23,6 +23,7 @@ int main() {
       te(2);
       te(1);
       te(1);
+      te(0);
       te(1);
       te(3);
       
