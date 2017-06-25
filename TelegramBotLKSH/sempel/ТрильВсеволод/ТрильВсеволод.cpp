@@ -37,7 +37,7 @@ int main()
 				}
 				else
 				{
-					if(cntm==0&&cnto>=1)
+					if(cnto>=1)
 					{
 						cout<<0<<endl;
 						cout.flush();

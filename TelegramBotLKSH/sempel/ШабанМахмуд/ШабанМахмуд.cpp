@@ -15,9 +15,9 @@ int main() {
 		else if (i % 6 == 4)
 			cout << 2 << endl;
 		else if (i % 6 == 5)
-			cout << 0 << endl;
-		else 
 			cout << 1 << endl;
+		else 
+			cout << 2 << endl;
 		cout.flush();
 		i++;
 	}
