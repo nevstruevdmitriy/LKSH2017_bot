@@ -26,13 +26,13 @@ int main()
 			}
 			else
 			{
-				if(cntm>=2)
+				if(cntm>=3)
 				{
 					cout<<0;
 				}
 				else
 				{
-					if(cntm==0&&cnto>=1)
+					if(cntm<=1&&cnto>=1)
 					{
 						cout<<0;
 					}
