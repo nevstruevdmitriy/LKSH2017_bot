@@ -37,7 +37,7 @@ int main() {
                    he_tern();
                    tern(1);
                    cin >> t;
-                   tetn(1);
+                   teên(1);
                    cin >> t;
                    tern(3);
                    he_tern();
