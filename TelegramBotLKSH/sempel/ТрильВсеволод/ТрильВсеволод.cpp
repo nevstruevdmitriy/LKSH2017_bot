@@ -24,7 +24,7 @@ int main()
 		{
 			if(cnto==0&&cntm>=1&&cntm<2)
 			{
-				cout<<1<<endl;
+				cout<<2<<endl;
 				cout.flush();
 				++cntm;
 			}
