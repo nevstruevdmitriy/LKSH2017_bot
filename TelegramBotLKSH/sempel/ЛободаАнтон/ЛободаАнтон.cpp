@@ -12,10 +12,10 @@ void he_tern(){
 }
 
 /*
-      0 ??????
-      1 ???????????
-      2 ????!
-      3 ????! ????! ????!
+      0 çàùèòà
+      1 ïåğåçàğÿäêà
+      2 áåíã
+      3 ÁÅÍÃ ÁÅÍÃ ÁÅÍÃ
 */
 
 int main() {
@@ -23,14 +23,20 @@ int main() {
       int p=0;
      
       while(true){
-                  if(p<3) tern(1);   //???????
-                  if(p<3) ++p;
-                  if(p<3) he_tern();
-                  if(p<3) tern(0);   //??????
-                  if(p<3) he_tern();
-                  if(p<3) tern(2);   //???????
-                  if(p<3) he_tern();
-                  if(p>=3) tern(3);
+                   tern(1);   //???????
+                   he_tern();
+                   tern(0);   //??????
+                   he_tern();
+                   tern(2);   //???????
+                   he_tern();
+                   tern(1);
+                   he_tern();
+                   tern(1)
+                   he_tern();
+                   tern(1);
+                   he_tern();
+                   tern(3);
+                   he_tern();
       }
       
 }
