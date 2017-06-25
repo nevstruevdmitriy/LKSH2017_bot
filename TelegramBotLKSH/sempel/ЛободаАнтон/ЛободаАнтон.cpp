@@ -33,9 +33,8 @@ int main() {
                    cin >> t;
                    tern(1);
                    he_tern();
-                   tern(0);
-                   he_tern();
                    tern(1);
+                   he_tern();
                    tern(3);
                    he_tern();
       }
