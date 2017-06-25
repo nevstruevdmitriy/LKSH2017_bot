@@ -12,7 +12,7 @@ int main() {
 			cout << 0 << endl;
 		else if (i % 6 == 3)
 			cout << 0 << endl;
-		else if (i % 6 == 5)
+		else if (i % 6 == 4)
 			cout << 2 << endl;
 		else if (i % 6 == 5)
 			cout << 0 << endl;
