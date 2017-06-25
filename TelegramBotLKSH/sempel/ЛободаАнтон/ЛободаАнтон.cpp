@@ -1,12 +1,9 @@
 #include <iostream>
 using namespace std;
 
-void tern(int ans){
+void te(int ans){
       cout << ans << endl;
       cout.flush();
-}
-
-void he_tern(){
       int t;
       cin >> t;
 }
@@ -20,27 +17,17 @@ void he_tern(){
 
 int main() {
       
-      int t;
-     
+      int p=0;
+      
       while(true){
-                   tern(1);   //???????
-                   he_tern();
-                   tern(0);   //??????
-                   he_tern();
-                   tern(2);   //???????
-                   he_tern();
-                   tern(1);
-                   cin >> t;
-                   tern(0);
-                   he_tern();
-                   tern(0);
-                   he_tern();
-                   tern(2);
-                   cin >> t;
-                   tern(1);
-                   cin >> t;
-                   tern(0);
-                   he_tern();
+                 
+                 te(1);
+                 ++p;
+                 te(0);
+                 te(0);
+                 if(p>=3)
+                 te(3);
+                   
       }
       
 }
