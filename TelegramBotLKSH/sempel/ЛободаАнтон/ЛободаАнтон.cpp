@@ -19,8 +19,8 @@ int main() {
       
       int p=0;
       te(1);
-      te(2);
       te(0);
+      te(2);
       while(true){
                  
                  te(1);
