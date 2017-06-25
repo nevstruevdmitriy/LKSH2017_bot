@@ -19,13 +19,14 @@ int main()
 		}
 		else
 		{
-			if(cnto==0&&cntm>0&&cntm<3)
+			if(cnto==0&&cntm>=1&&cntm<2)
 			{
-				cout<<2;
+				cout<<1;
+				++cntm;
 			}
 			else
 			{
-				if(cntm>=3)
+				if(cntm>=2)
 				{
 					cout<<0;
 				}
