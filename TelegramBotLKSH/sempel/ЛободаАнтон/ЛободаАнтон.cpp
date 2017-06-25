@@ -25,8 +25,8 @@ int main() {
                  
                  te(1);
                  ++p;
-                 te(0);
                  if(i == 2)te(2); else te(0);
+                 te(0);
                  if(p>=3)
                  te(3);
                    
