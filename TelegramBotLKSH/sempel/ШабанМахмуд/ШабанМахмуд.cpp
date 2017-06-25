@@ -9,7 +9,7 @@ int main() {
 		if (i % 6 == 1)
 			cout << 0 << endl;
 		else if (i % 6 == 2)
-			cout << 1 << endl;
+			cout << 0 << endl;
 		else if (i % 6 == 3)
 			cout << 0 << endl;
 		else if (i % 6 != 0)
