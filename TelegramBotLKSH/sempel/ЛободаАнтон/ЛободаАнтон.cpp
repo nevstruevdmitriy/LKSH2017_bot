@@ -4,8 +4,6 @@ using namespace std;
 void te(int ans){
       cout << ans << endl;
       cout.flush();
-      int t;
-      cin >> t;
 }
 
 /*
@@ -17,14 +15,13 @@ void te(int ans){
 
 int main() {
       
-      int p=0;
-      te(1);
-      te(0);
-      te(2);
-      te(1);
-      te(1);
-      te(0);
-      te(1);
-      te(3);
-      
+       int t;
+       tern(1);
+       cin >> t;
+       while(true){
+                cin >> t;
+                if(t != 0)tern (2);
+                else tern(0)   
+       }
+       
 }
