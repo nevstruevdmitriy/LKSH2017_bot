@@ -23,7 +23,7 @@ int main() {
       int p=0;
      
       while(true){
-            if(p<0){
+            if(p<3){
                   tern(1);   //???????
                   ++p;
                   he_tern();
