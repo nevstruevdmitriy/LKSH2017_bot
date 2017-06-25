@@ -224,5 +224,5 @@ void strategy2() {
 }
 
 int main() {
-    strategy2();
+    strategy1();
 }
