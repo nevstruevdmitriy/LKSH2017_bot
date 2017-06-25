@@ -31,14 +31,7 @@ int main() {
                    he_tern();
                    tern(1);
                    cin >> t;
-                   if(t != 1)tern(1);
-                   else{
-                        
-                        tern(0);
-                        tern(1);
-                        tern(2);
-                        
-                   }
+                   tern(1);
                    he_tern();
                    tern(0);
                    he_tern();
