@@ -33,13 +33,13 @@ int main() {
                    cin >> t;
                    tern(1);
                    he_tern();
-                   tern(2);
+                   tern(0);
                    he_tern();
-                   tern(1);
+                   tern(2);
                    cin >> t;
                    tern(1);
                    cin >> t;
-                   tern(3);
+                   tern(0);
                    he_tern();
       }
       
