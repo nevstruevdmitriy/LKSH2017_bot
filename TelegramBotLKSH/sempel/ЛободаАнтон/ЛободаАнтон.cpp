@@ -21,7 +21,7 @@ int main() {
        while(true){
                 cin >> t;
                 if(t != 0)tern (2);
-                else tern(0)   
+                else tern(0);
        }
        
 }
