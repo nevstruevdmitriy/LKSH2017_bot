@@ -18,7 +18,9 @@ void te(int ans){
 int main() {
       
       int p=0;
-      
+      te(1);
+      te(2);
+      te(0);
       while(true){
                  
                  te(1);
