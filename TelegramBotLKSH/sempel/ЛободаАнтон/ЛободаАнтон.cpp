@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void te(int ans){
+void tern(int ans){
       cout << ans << endl;
       cout.flush();
 }
