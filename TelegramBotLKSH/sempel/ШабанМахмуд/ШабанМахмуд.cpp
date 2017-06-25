@@ -12,8 +12,10 @@ int main() {
 			cout << 0 << endl;
 		else if (i % 6 == 3)
 			cout << 0 << endl;
-		else if (i % 6 != 0)
+		else if (i % 6 == 5)
 			cout << 2 << endl;
+		else if (i % 6 == 5)
+			cout << 0 << endl;
 		else 
 			cout << 1 << endl;
 		cout.flush();
