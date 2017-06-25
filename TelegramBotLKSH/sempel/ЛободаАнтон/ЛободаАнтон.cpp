@@ -20,7 +20,7 @@ void he_tern(){
 
 int main() {
       
-      int p=0;
+      int t;
      
       while(true){
                    tern(1);   //???????
@@ -30,8 +30,15 @@ int main() {
                    tern(2);   //???????
                    he_tern();
                    tern(1);
-                   he_tern();
-                   tern(1);
+                   cin >> t;
+                   if(t != 1)tern(1);
+                   else{
+                        
+                        tern(0);
+                        tern(1);
+                        tern(2);
+                        
+                   }
                    he_tern();
                    tern(0);
                    he_tern();
