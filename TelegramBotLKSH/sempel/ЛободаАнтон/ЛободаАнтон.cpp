@@ -31,7 +31,7 @@ int main() {
                    he_tern();
                    tern(1);
                    he_tern();
-                   tern(1)
+                   tern(1);
                    he_tern();
                    tern(1);
                    he_tern();
