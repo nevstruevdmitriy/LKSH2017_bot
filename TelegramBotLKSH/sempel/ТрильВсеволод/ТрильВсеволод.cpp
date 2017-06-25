@@ -26,13 +26,13 @@ int main()
 			{
 				cout<<2<<endl;
 				cout.flush();
-				++cntm;
+				--cntm;
 			}
 			else
 			{
 				if(cntm>=3)
 				{
-					cout<<0<<endl;
+					cout<<3<<endl;
 					cout.flush();
 				}
 				else
