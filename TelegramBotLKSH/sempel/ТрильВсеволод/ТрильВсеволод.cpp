@@ -6,7 +6,7 @@ int main()
 	bool p=0;
 	while(true)
 	{
-		if(cntm==0)
+		if(cntm<=1)
 		{
 			cout<<1<<endl;
 			cout.flush();

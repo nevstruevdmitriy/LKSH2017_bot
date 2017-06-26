@@ -2747,3 +2747,31 @@ you'll be back
 war БеленкоАлена НевструевВладислав
 you'll be back
 
+{Mon Jun 26 21:42:34 2017}:НевструевВладислав:Потребовать сатисфакцию :НевструевДмитрий
+war НевструевДмитрий НевструевВладислав
+Exterminate!
+
+{Mon Jun 26 21:42:38 2017}:НевструевВладислав:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet НевструевВладислав
+Exterminate!
+
+{Mon Jun 26 21:42:40 2017}:НевструевВладислав:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet НевструевВладислав
+you'll be back
+
+{Mon Jun 26 21:42:42 2017}:НевструевВладислав:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet НевструевВладислав
+you'll be back
+
+{Mon Jun 26 21:42:44 2017}:НевструевВладислав:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet НевструевВладислав
+you'll be back
+
+{Mon Jun 26 21:42:48 2017}:НевструевВладислав:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet НевструевВладислав
+you'll be back
+
+{Mon Jun 26 21:42:51 2017}:НевструевВладислав:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet НевструевВладислав
+Exterminate!
+

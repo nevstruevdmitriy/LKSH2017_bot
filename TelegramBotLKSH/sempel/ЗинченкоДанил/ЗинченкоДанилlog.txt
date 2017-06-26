@@ -3132,3 +3132,16 @@ Exterminate!
 war ТрильВсеволод ЗинченкоДанил
 Exterminate!
 
+{Mon Jun 26 21:42:59 2017}:ЗинченкоДанил:/task
+{Mon Jun 26 21:43:01 2017}:ЗинченкоДанил:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet ЗинченкоДанил
+Exterminate!
+
+{Mon Jun 26 21:43:03 2017}:ЗинченкоДанил:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet ЗинченкоДанил
+Exterminate!
+
+{Mon Jun 26 21:43:04 2017}:ЗинченкоДанил:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet ЗинченкоДанил
+Exterminate!
+
