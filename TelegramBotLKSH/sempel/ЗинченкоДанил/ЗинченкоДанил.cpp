@@ -33,80 +33,72 @@ ________________________________________________________^(0,0)^_________________
 ______________________________________________________^(0,0)^_______________________________________________________
 @LiS
 */
-struct fenwick
-{
-	long long n, m, t;
-	vector<vector<vector<long long>>> B;
 
-	fenwick(long long n, long long m, long long t)
-	{	
-		this->n = n;
-		this->m = m;
-		this->t = t;
-		B.resize(n + 1);
-		for (int i = 0; i <= n; i++)
-		{
-			B[i].resize(m + 1);
-			for (int j = 0; j <= m; j++)
-				B[i][j].resize(t + 1);
-		}
-	}
-
-	void add(long long x1, long long y1, long long z1, long long d)
-	{
-		for (int x = x1; x <= this->n; x = (x | (x + 1)))
-			for (int y = y1; y <= this->m; y = (y | (y + 1)))
-				for (int z = z1; z <= this->t; z = (z | (z + 1)))
-					B[x][y][z] += d;
-	}
-
-	long long rsqfw(long long x1, long long y1, long long z1)
-	{
-		long long ans = 0;
-		for (int x = x1; x >= 0; x = (x & (x + 1)) - 1)
-			for (int y = y1; y >= 0; y = (y & (y + 1)) - 1)
-				for (int z = z1; z >= 0; z = (z & (z + 1)) - 1)
-					ans += B[x][y][z];
-		return ans;
-	}
-
-	long long rsq(long long x1, long long x2, long long y1, long long y2, long long z1, long long z2)
-	{
-		return rsqfw(x2, y2, z2) - rsqfw(x2, y1 - 1, z2) - rsqfw(x2, y2, z1 - 1) - rsqfw(x1 - 1, y2, z2) + rsqfw(x1 - 1, y1 - 1, z2) + rsqfw(x1 - 1, y2, z1 - 1) + rsqfw(x2, y1 - 1, z1 - 1) - rsqfw(x1 - 1, y1 - 1, z1 - 1);
-	}
-};
+int globalpatron1 = 0;
+int globalpatron2 = 0;
 
 int main() {
 	srand(time(NULL));
+	/*srand(time(NULL));
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
-	//cout.setf(ios::fixed);
-	//cout.precision(0);
-	//freopen("fenwick.in", "r", stdin);
-	//freopen("fenwick.out", "w", stdout);
-	long long n;
-	cin >> n;
-	fenwick f(n, n, n);
-	while(true)
+	cout.setf(ios::fixed);
+	cout.precision(0);*/
+	//freopen("tree.in", "r", stdin);
+	//freopen("tree.out", "w", stdout);
+	int count = -1, xd;
+	while (true)
 	{
-		long long x1, x2, y1, y2, z1, z2;
-		int a;
-		cin >> a;
-		if (a == 3)
-			return 0;
-		cin >> x1 >> y1 >> z1 >> x2;
-		if (a == 1)
-			f.add(x1, y1, z1, x2);
-		else
+		count++;
+		int t;
+		if (count == 0)
 		{
-			cin >> y2 >> z2;
-			if (x1 > x2)
-				swap(x1, x2);
-			if (y1 > y2)
-				swap(y1, y2);
-			if (z1 > z2)
-				swap(z1, z2);
-			cout << f.rsq(x1, x2, y1, y2, z1, z2) << endl;
+			cout << 1 << endl;
+			globalpatron1++;
+			continue;
+		}
+		cin >> xd;
+		if (globalpatron1 == 3)
+		{
+			cout << 3 << endl;
+		}
+		if (xd == 0)
+		{
+			if (globalpatron1)
+			{
+				cout << 2 << endl;
+				globalpatron1--;
+			}
+			else
+			{
+				cout << 1 << endl;
+				globalpatron1++;
+			}
+		}
+		if (xd == 1)
+		{
+			globalpatron2++;
+			if (globalpatron2 == 1)
+				cout << 0 << endl;
+			else
+			{
+				if (globalpatron1)
+				{
+					cout << 2 << endl;
+					globalpatron1--;
+				}
+				else
+				{
+					cout << 1 << endl;
+					globalpatron1++;
+				}
+			}
+		}
+		if (xd == 2)
+		{
+			globalpatron2--;
+			cout << 1 << endl;
+			globalpatron1++;
 		}
 	}
 }
