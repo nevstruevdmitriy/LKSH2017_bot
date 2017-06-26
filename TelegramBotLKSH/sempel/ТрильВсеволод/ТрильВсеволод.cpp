@@ -13,14 +13,14 @@ int main()
 		}
 		else
 		{
-			if(i%2==0)
+			if(i%2!=0)
 			{
 				cout<<0<<endl;
 				cout.flush();
 			}
 			else
 			{
-				if(i%7==3||i%7==5||i%7==1)
+				if(i%7==4||i%7==6||i%7==2)
 				{
 					cout<<1<<endl;
 					cout.flush();
