@@ -47,20 +47,30 @@ int main() {
 				enemyBul = 0;
 				bullets = 0;
 			}
-			if (turn == 2 &&  bullets>3){
+			if (turn == 2 &&  bullets>=3){
 				cout << 3 << endl;
 				enemyBul = 0;
 				bullets = 0;
+			}
+			if (turn == 2 && bullets==0){
+				cout << 1 << endl;
+				enemyBul = 0;
+				++bullets;
 			}
 			if (turn == 3 && bullets > 0 && bullets < 3){
 				cout << 2 << endl;
 				enemyBul = 0;
 				bullets = 0;
 			}
-			if (turn == 3 && bullets>3){
+			if (turn == 3 && bullets>=3){
 				cout << 3 << endl;
 				enemyBul = 0;
 				bullets = 0;
+			}
+			if (turn == 3 && bullets == 0){
+				cout << 1 << endl;
+				enemyBul = 0;
+				++bullets;
 			}
 			
 			
