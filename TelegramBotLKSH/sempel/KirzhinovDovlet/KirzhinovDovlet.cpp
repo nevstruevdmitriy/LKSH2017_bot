@@ -17,17 +17,21 @@ int main() {
 				cout << 1 << endl;
 				DNIWE = 0;
 			}
-			
-			if (DNO && turn!=1){
-				DNO = 0;
-				cout << 1 << endl;
-			}
-			if (turn==1 &&enemyBul == 2){
+			else{
 				cout << 0 << endl;
-				DNIWE = 1;
-				++enemyBul;
 			}
 			if (!DNIWE){
+				if (DNO && turn != 1){
+					DNO = 0;
+					cout << 1 << endl;
+				}
+				if (turn == 1 && enemyBul == 2){
+					cout << 0 << endl;
+					DNIWE = 1;
+					++enemyBul;
+				}
+			}
+			if (!DNIWE || !DNO){
 				if (turn == 1){
 					cout << 0 << endl;
 					++enemyBul;
