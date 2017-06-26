@@ -74,4 +74,6 @@ war БеленкоАлена PetrosyantsMary
 
 {Mon Jun 26 21:33:12 2017}:PetrosyantsMary: Добавлин новый файл
 commit:
-b''
+b''{Mon Jun 26 21:34:06 2017}:PetrosyantsMary: Добавлин новый файл
+commit:
+b''{Mon Jun 26 21:35:23 2017}:PetrosyantsMary:/MyBot

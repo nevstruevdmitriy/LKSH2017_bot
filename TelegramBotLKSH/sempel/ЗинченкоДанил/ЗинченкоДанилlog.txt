@@ -3100,3 +3100,15 @@ Exterminate!
 war ТрильВсеволод ЗинченкоДанил
 Exterminate!
 
+{Mon Jun 26 21:34:20 2017}:ЗинченкоДанил:Потребовать сатисфакцию :PetrosyantsMary
+war PetrosyantsMary ЗинченкоДанил
+Exterminate!
+
+{Mon Jun 26 21:34:25 2017}:ЗинченкоДанил:Потребовать сатисфакцию :PetrosyantsMary
+war PetrosyantsMary ЗинченкоДанил
+Exterminate!
+
+{Mon Jun 26 21:34:41 2017}:ЗинченкоДанил:Потребовать сатисфакцию :PetrosyantsMary
+war PetrosyantsMary ЗинченкоДанил
+Exterminate!
+
