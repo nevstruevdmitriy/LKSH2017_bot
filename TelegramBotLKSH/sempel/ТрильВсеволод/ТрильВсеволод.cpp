@@ -3,9 +3,10 @@ using namespace std;
 int main()
 {
 	int cnto=0, cntm=0, turn;
+	bool p=0;
 	while(true)
 	{
-		if(cntm<=1)
+		if(cntm==0)
 		{
 			cout<<1<<endl;
 			cout.flush();
