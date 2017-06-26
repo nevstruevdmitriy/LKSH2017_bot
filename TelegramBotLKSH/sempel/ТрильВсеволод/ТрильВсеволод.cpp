@@ -19,7 +19,7 @@ int main()
 				{
 					cout<<2<<endl;
 					cout.flush();
-					--cntm;
+					cntm=0;
 				}
 				else
 				{
@@ -67,7 +67,7 @@ int main()
 		}
 		if(turn==2)
 		{
-			cnto--;
+			cnto=0;
 		}
 		if(turn==3)
 		{
