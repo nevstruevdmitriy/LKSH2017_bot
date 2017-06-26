@@ -54,8 +54,11 @@ int main() {
 		if (count == 0)
 		{
 			///////0/////////////1////////////2////////////3////////////4////////////5////////////6////////////7////////////8////////
-			cout << 1 << endl << 0 << endl << 0 << endl;
-			cout << 2 << endl << 1 << endl << 0 << endl << 1 << endl << 0 << endl << 1 << endl << 3 << endl;
+			cout << 1 << endl << 0 << endl << 0 << endl << 2 << endl;
+			cin >> t1 >> t1 >> t1 >> t1;
+			if(t1 == 0)
+				cout << 0 << endl;
+			cout << 1 << endl << 0 << endl << 1 << endl << 0 << endl << 1 << endl << 3 << endl;
 			continue;
 		}
 		
