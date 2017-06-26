@@ -133,9 +133,9 @@ void clever_fixed_turn() {
 }
 
 void strategy1() {
-    for (int i = 0; i < 113; ++i) {
+    for (int i = 0; i < 114; ++i) {
         fl = 0;
-        if (i == 112) {
+        if (i == 113) {
             if (c1) {
                 turn(max(c1, 2));
             } else {
@@ -208,10 +208,10 @@ void strategy1() {
 }
 
 void strategy2() {
-    for (int i = 0; i < 113; ++i) {
+    for (int i = 0; i < 114; ++i) {
         fl = 0;
         int c = c1 * 4 + c2;
-        if (i == 112) {
+        if (i == 113) {
             if (c1) {
                 turn(max(c1, 2));
             } else {
