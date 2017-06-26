@@ -107,3 +107,22 @@ you'll be back
 war БеленкоАлена PetrosyantsMary
 you'll be back
 
+{Mon Jun 26 22:29:58 2017}:PetrosyantsMary: Добавлин новый файл
+commit:
+b''{Mon Jun 26 22:30:25 2017}:PetrosyantsMary:Потребовать сатисфакцию :НевструевДмитрий
+war НевструевДмитрий PetrosyantsMary
+Exterminate!
+
+{Mon Jun 26 22:30:41 2017}:PetrosyantsMary:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet PetrosyantsMary
+you'll be back
+
+{Mon Jun 26 22:30:56 2017}:PetrosyantsMary:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод PetrosyantsMary
+Exterminate!
+
+{Mon Jun 26 22:31:07 2017}:PetrosyantsMary:Потребовать сатисфакцию :НевструевВладислав
+war НевструевВладислав PetrosyantsMary
+you'll be back
+
+{Mon Jun 26 22:31:45 2017}:PetrosyantsMary:/MyBot

@@ -3521,3 +3521,7 @@ war KirzhinovDovlet ЗинченкоДанил
 war ТрильВсеволод ЗинченкоДанил
 Exterminate!
 
+{Mon Jun 26 22:30:45 2017}:ЗинченкоДанил:Потребовать сатисфакцию :PetrosyantsMary
+war PetrosyantsMary ЗинченкоДанил
+Exterminate!
+

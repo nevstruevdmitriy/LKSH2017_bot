@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 	// your code goes here
-	 int turn,p=0, r=0;
+	 int turn,p=0, r=1;
  while (true) 
  {
  
@@ -12,22 +12,32 @@ int main() {
   		p++;
   		cout << 1 << endl;
 		cout.flush();
-		r++;
+		r--;
 		
   	}
-	if( r==1 && p==1){
-		r--;
+  	
+	if( r<=2 && p==1){
+	
 		cout << 0 << endl;
 		cout.flush();
+		r++;
 	}
-  	else
-  	{
-  		
-  		p--;
-  		cout << 2 << endl;
-		cout.flush();
+	else{
+		if(p==3){
+			cout << 3 << endl;
+			cout.flush();
+			r=1;
+			p=0;
+		}
+		else{
+			p++;
+  			cout << 1 << endl;
+			cout.flush();
+		}
 		
-  	}
+		
+	}
+  	
   
   
   cin >> turn;
