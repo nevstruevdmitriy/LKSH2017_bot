@@ -32,9 +32,9 @@ int main()
 		{
 			if(cnto==0&&cntm>=1&&cntm<2)
 			{
-				cout<<2<<endl;
+				cout<<1<<endl;
 				cout.flush();
-				--cntm;
+				++cntm;
 			}
 			else
 			{
