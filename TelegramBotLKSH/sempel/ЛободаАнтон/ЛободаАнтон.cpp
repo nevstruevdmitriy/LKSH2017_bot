@@ -9,10 +9,12 @@ void tern(int n){
 int main() {
 	
 	tern(1);
-	tern(1);
+	tern(0);
 	tern(0);
 	tern(0);
 	tern(2);
+	tern(1);
+	tern(0);
 	tern(1);
 	tern(0);
 	tern(1);
