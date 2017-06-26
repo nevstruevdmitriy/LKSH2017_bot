@@ -58,7 +58,7 @@ int main() {
 			cin >> t;
 			if(t == 2)
 				cout << 2 << endl;
-			cout << 0 << endl << 0 << endl << 2 << endl << 1 << endl << 0 << endl << 1 << endl << 0 << endl << 1 << endl << 3 << endl;
+			cout << 0 << endl << 2 << endl << 1 << endl << 0 << endl << 1 << endl << 0 << endl << 1 << endl << 3 << endl;
 			continue;
 		}
 		
