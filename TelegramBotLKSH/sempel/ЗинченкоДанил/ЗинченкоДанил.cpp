@@ -33,99 +33,80 @@ ________________________________________________________^(0,0)^_________________
 ______________________________________________________^(0,0)^_______________________________________________________
 @LiS
 */
-
-int globalpatron1 = 0;
-int globalpatron2 = 0;
-double v[3] = { 33, 33, 33 };
-
-void func(int e)
+struct fenwick
 {
-	for (int i = 0; i < 3; i++)
-		if (e == i)
-			v[i] += (100 - v[i]) / 2;
-		else
-			v[i] /= 2;
-}
+	long long n, m, t;
+	vector<vector<vector<long long>>> B;
 
-void bang() {
-	if (globalpatron1 == 3)
-	{
-		cout << 3 << endl;
-		exit(0);
+	fenwick(long long n, long long m, long long t)
+	{	
+		this->n = n;
+		this->m = m;
+		this->t = t;
+		B.resize(n + 1);
+		for (int i = 0; i <= n; i++)
+		{
+			B[i].resize(m + 1);
+			for (int j = 0; j <= m; j++)
+				B[i][j].resize(t + 1);
+		}
 	}
-	int e0 = rand() % 100, e1 = rand() % 100, e2 = rand() % 100;
-	bool tr0 = (e0 <= v[0]), tr1 = (e1 <= v[1]), tr2 = (e2 <= v[2]);
-	vector<pair<int, int>> otv;
-	if (tr0)
-		otv.push_back({ e0 *-1, 0 });
-	if (tr1)
-		otv.push_back({ e1 *-1, 1 });
-	if (tr2 && globalpatron1 > 0)
-		otv.push_back({ e2 *-1, 2 });
-	sort(otv.begin(), otv.end());
-	if (otv.size())
+
+	void add(long long x1, long long y1, long long z1, long long d)
 	{
-		if ((*otv.begin()).second == 2)
-			globalpatron1--;
-		if ((*otv.begin()).second == 1)
-			globalpatron1++;
-		cout << (*otv.begin()).second << endl;
+		for (int x = x1; x <= this->n; x = (x | (x + 1)))
+			for (int y = y1; y <= this->m; y = (y | (y + 1)))
+				for (int z = z1; z <= this->t; z = (z | (z + 1)))
+					B[x][y][z] += d;
 	}
-	else
+
+	long long rsqfw(long long x1, long long y1, long long z1)
 	{
-		otv.push_back({ e0 *-1, 0 });
-		otv.push_back({ e1 *-1, 1 });
-		if (globalpatron1 > 0)
-			otv.push_back({ e2 *-1, 2 });
-		sort(otv.begin(), otv.end());
-		if ((*otv.begin()).second == 2)
-			globalpatron1--;
-		if ((*otv.begin()).second == 1)
-			globalpatron1++;
-		cout << (*otv.begin()).second << endl;
+		long long ans = 0;
+		for (int x = x1; x >= 0; x = (x & (x + 1)) - 1)
+			for (int y = y1; y >= 0; y = (y & (y + 1)) - 1)
+				for (int z = z1; z >= 0; z = (z & (z + 1)) - 1)
+					ans += B[x][y][z];
+		return ans;
 	}
-}
+
+	long long rsq(long long x1, long long x2, long long y1, long long y2, long long z1, long long z2)
+	{
+		return rsqfw(x2, y2, z2) - rsqfw(x2, y1 - 1, z2) - rsqfw(x2, y2, z1 - 1) - rsqfw(x1 - 1, y2, z2) + rsqfw(x1 - 1, y1 - 1, z2) + rsqfw(x1 - 1, y2, z1 - 1) + rsqfw(x2, y1 - 1, z1 - 1) - rsqfw(x1 - 1, y1 - 1, z1 - 1);
+	}
+};
 
 int main() {
 	srand(time(NULL));
-	/*srand(time(NULL));
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
-	cout.setf(ios::fixed);
-	cout.precision(0);*/
-	//freopen("tree.in", "r", stdin);
-	//freopen("tree.out", "w", stdout);
-	int count = -1, xd;
-	while (true)
+	//cout.setf(ios::fixed);
+	//cout.precision(0);
+	//freopen("fenwick.in", "r", stdin);
+	//freopen("fenwick.out", "w", stdout);
+	long long n;
+	cin >> n;
+	fenwick f(n, n, n);
+	while(true)
 	{
-		count++;
-		int t;
-		if (count == 0)
+		long long x1, x2, y1, y2, z1, z2;
+		int a;
+		cin >> a;
+		if (a == 3)
+			return 0;
+		cin >> x1 >> y1 >> z1 >> x2;
+		if (a == 1)
+			f.add(x1, y1, z1, x2);
+		else
 		{
-			cout << 1 << endl;
-			globalpatron1++;
-			continue;
+			cin >> y2 >> z2;
+			if (x1 > x2)
+				swap(x1, x2);
+			if (y1 > y2)
+				swap(y1, y2);
+			if (z1 > z2)
+				swap(z1, z2);
+			cout << f.rsq(x1, x2, y1, y2, z1, z2) << endl;
 		}
-		cin >> xd;
-		if (xd == 0)
-		{
-			func(0);
-			func(2);
-		}
-		if (xd == 1)
-		{
-			func(0);
-			func(2);
-			globalpatron2++;
-		}
-		if (xd == 2)
-		{
-			func(1);
-			func(2);
-			globalpatron2--;
-		}
-		if (globalpatron2 == 0)
-			v[0] = 0, v[1] = 35, v[2] = 65;
-		bang();
 	}
 }
