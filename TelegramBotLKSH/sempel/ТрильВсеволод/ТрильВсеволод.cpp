@@ -16,7 +16,7 @@ int main()
 				cout.flush();
 			}
 			else{
-				if(i<=5)
+				if(i<=7)
 				{
 					if(i==3||i==5)
 					{
