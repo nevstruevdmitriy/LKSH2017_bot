@@ -53,51 +53,10 @@ int main() {
 		int t;
 		if (count == 0)
 		{
-			cout << 1 << endl << 0 << endl << 0 << endl << 2 << endl << 0 << endl << 1 << endl << 0 << endl << 2 << endl;
+			///////0/////////////1////////////2////////////3////////////4////////////5////////////6////////////7////////////8////////
+			cout << 1 << endl << 0 << endl << 0 << endl << 2 << endl << 0 << endl << 1 << endl << 1 << endl << 1 << endl << 3 << endl;
 			continue;
 		}
-		cin >> xd;
-		if (globalpatron1 == 3)
-		{
-			cout << 3 << endl;
-		}
-		if (xd == 0)
-		{
-			if (globalpatron1)
-			{
-				cout << 2 << endl;
-				globalpatron1--;
-			}
-			else
-			{
-				cout << 1 << endl;
-				globalpatron1++;
-			}
-		}
-		if (xd == 1)
-		{
-			globalpatron2++;
-			if (globalpatron2 == 1)
-				cout << 0 << endl;
-			else
-			{
-				if (globalpatron1)
-				{
-					cout << 2 << endl;
-					globalpatron1--;
-				}
-				else
-				{
-					cout << 1 << endl;
-					globalpatron1++;
-				}
-			}
-		}
-		if (xd == 2)
-		{
-			globalpatron2--;
-			cout << 1 << endl;
-			globalpatron1++;
-		}
+		
 	}
 }
