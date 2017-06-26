@@ -17,9 +17,8 @@ int main()
 			{
 				if(cntm>=1)
 				{
-					cout<<2<<endl;
+					cout<<0<<endl;
 					cout.flush();
-					cntm--;
 				}
 				else
 				{
