@@ -3312,3 +3312,7 @@ Exterminate!
 war НевструевДмитрий ЗинченкоДанил
 Exterminate!
 
+{Mon Jun 26 22:05:46 2017}:ЗинченкоДанил:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet ЗинченкоДанил
+Exterminate!
+

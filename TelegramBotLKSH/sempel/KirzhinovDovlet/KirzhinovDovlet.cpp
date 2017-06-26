@@ -22,9 +22,10 @@ int main() {
 				DNO = 0;
 				cout << 1 << endl;
 			}
-			if (enemyBul >= 3){
+			if (turn==1 &&enemyBul == 2){
 				cout << 0 << endl;
 				DNIWE = 1;
+				++enemyBul;
 			}
 			if (!DNIWE){
 				if (turn == 1){
