@@ -497,3 +497,78 @@ war KirzhinovDovlet KirzhinovDovlet
 war НевструевДмитрий KirzhinovDovlet
 Exterminate!
 
+{Mon Jun 26 22:24:31 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод KirzhinovDovlet
+you'll be back
+
+{Mon Jun 26 22:24:32 2017}:KirzhinovDovlet:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
+{Mon Jun 26 22:24:25 2017}:KirzhinovDovlet: Добавлин новый файл
+commit:
+b''{Mon Jun 26 22:24:34 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевДмитрий
+war НевструевДмитрий KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:24:36 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевВладислав
+war НевструевВладислав KirzhinovDovlet
+you'll be back
+
+{Mon Jun 26 22:24:37 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ЛободаАнтон
+war ЛободаАнтон KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:24:39 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ТерзиянГрант
+war ТерзиянГрант KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:24:41 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ЗинченкоДанил
+war ЗинченкоДанил KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
+{Mon Jun 26 22:24:44 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ЗинченкоДанил
+war ЗинченкоДанил KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
+{Mon Jun 26 22:24:44 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ТерзиянГрант
+war ТерзиянГрант KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:24:49 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ЗинченкоДанил
+war ЗинченкоДанил KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
+{Mon Jun 26 22:24:51 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ЛободаАнтон
+war ЛободаАнтон KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:24:54 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевВладислав
+war НевструевВладислав KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:24:56 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевВладислав
+war НевструевВладислав KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:24:57 2017}:KirzhinovDovlet:Потребовать сатисфакцию :PetrosyantsMary
+war PetrosyantsMary KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:24:58 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод KirzhinovDovlet
+you'll be back
+
+{Mon Jun 26 22:25:01 2017}:KirzhinovDovlet:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
+{Mon Jun 26 22:25:02 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевДмитрий
+war НевструевДмитрий KirzhinovDovlet
+Exterminate!
+

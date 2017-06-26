@@ -4,34 +4,26 @@ int main()
 {
 	int cnto=0, cntm=0, turn;
 	bool p1=0, p2=0, p3=0;
-	for(int i=0; true; ++i)
+	for(int i=1; true; ++i)
 	{
-		if(i==0)
+		if(i%2!=0)
 		{
-			cout<<1<<endl;
+			cout<<0<<endl;
 			cout.flush();
 		}
 		else
 		{
-			if(i%2!=0)
+			if(i%8==2||i%8==4||i%8==6)
 			{
-				cout<<0<<endl;
+				cout<<1<<endl;
 				cout.flush();
 			}
 			else
 			{
-				if(i%7==4||i%7==6||i%7==2)
-				{
-					cout<<1<<endl;
-					cout.flush();
-				}
-				else
-				{
-					cout<<3<<endl;
-					cout.flush();
-				}
-			}	
-		}	
+				cout<<3<<endl;
+				cout.flush();
+			}
+		}		
 		cin>>turn;
 		if(turn>=2){
 			cnto=0;
