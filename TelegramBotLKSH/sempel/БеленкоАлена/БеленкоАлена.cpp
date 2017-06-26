@@ -9,6 +9,7 @@ int main() {
 	a[4] = 1;
 	a[5] = 3;
 	int turn, cnt = 0;
+	int i = 1;
 	while (true) {
 		if (i <= 5)
 		{
