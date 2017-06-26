@@ -438,7 +438,7 @@ def inputMesText(mes):
 		out = data.task
 		photo = open(data.p_task, "rb")
 	elif "/all_mes^" in mes.text:
-		messeg = split(mes.text, "^")
+		messeg = mes.text.split("^")
 		tellAllId("Объявление жюри: %s" % messeg[1])
 	elif "Потребовать сатисфакцию :" in mes.text:
 		log += mes.text + "\n"
