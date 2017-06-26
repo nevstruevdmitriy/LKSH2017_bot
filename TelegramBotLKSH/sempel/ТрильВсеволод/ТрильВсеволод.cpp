@@ -15,26 +15,18 @@ int main()
 			}
 			else
 			{
-				if(cntm>=1)
-				{
-					cout<<2<<endl;
-					cout.flush();
-					--cntm;
-				}
-				else
-				{
-					cout<<0<<endl;
-					cout.flush();
-				}
+				cout<<2<<endl;
+				cout.flush();
+				cntm--;
 			}
 		}
 		else
 		{
 			if(cnto==0&&cntm>=1&&cntm<2)
 			{
-				cout<<1<<endl;
+				cout<<2<<endl;
 				cout.flush();
-				++cntm;
+				--cntm;
 			}
 			else
 			{
@@ -42,7 +34,6 @@ int main()
 				{
 					cout<<3<<endl;
 					cout.flush();
-					cntm=0;
 				}
 				else
 				{
@@ -64,14 +55,6 @@ int main()
 		if(turn==1)
 		{
 			++cnto;
-		}
-		if(turn==2)
-		{
-			cnto--;
-		}
-		if(turn==3)
-		{
-			cnto=0;
 		}
 	}
 	return 0;
