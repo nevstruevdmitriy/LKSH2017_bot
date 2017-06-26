@@ -18,7 +18,7 @@ int main()
 			else{
 				if(i<=5)
 				{
-					if(i==3)
+					if(i==3||i==5)
 					{
 						cout<<1<<endl;
 						cout.flush();
