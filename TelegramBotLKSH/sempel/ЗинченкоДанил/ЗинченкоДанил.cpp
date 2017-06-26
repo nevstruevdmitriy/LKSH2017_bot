@@ -50,15 +50,12 @@ int main() {
 	while (true)
 	{
 		count++;
-		int t;
+		int t1, t2, t3;
 		if (count == 0)
 		{
 			///////0/////////////1////////////2////////////3////////////4////////////5////////////6////////////7////////////8////////
-			cout << 1 << endl << 0 << endl;
-			cin >> t >> t;
-			if(t == 2)
-				cout << 2 << endl;
-			cout << 0 << endl << 2 << endl << 1 << endl << 0 << endl << 1 << endl << 0 << endl << 1 << endl << 3 << endl;
+			cout << 1 << endl << 0 << endl << 0 << endl;
+			cout << 2 << endl << 1 << endl << 0 << endl << 1 << endl << 0 << endl << 1 << endl << 3 << endl;
 			continue;
 		}
 		

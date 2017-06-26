@@ -3316,3 +3316,15 @@ Exterminate!
 war KirzhinovDovlet ЗинченкоДанил
 Exterminate!
 
+{Mon Jun 26 22:07:36 2017}:ЗинченкоДанил:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet ЗинченкоДанил
+Exterminate!
+
+{Mon Jun 26 22:07:40 2017}:ЗинченкоДанил:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод ЗинченкоДанил
+you'll be back
+
+{Mon Jun 26 22:07:46 2017}:ЗинченкоДанил:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод ЗинченкоДанил
+you'll be back
+
