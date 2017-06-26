@@ -2,4 +2,8 @@
 {Mon Jun 26 20:23:44 2017}:PetrosyantsMary:/task
 {Mon Jun 26 21:01:42 2017}:PetrosyantsMary: Добавлин новый файл
 commit:
-b''
+b''{Mon Jun 26 21:05:47 2017}:PetrosyantsMary:Потребовать сатисфакцию :ЛободаАнтон
+war ЛободаАнтон PetrosyantsMary
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
