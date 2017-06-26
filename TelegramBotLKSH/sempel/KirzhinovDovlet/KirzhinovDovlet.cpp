@@ -29,10 +29,43 @@ int main() {
 					DNO = 0;
 					cout << 1 << endl;
 				}
-				if (turn == 1 && enemyBul == 2){
-					cout << 0 << endl;
-					DNIWE = 1;
-					++enemyBul;
+				else{
+					if (enemyBul == 2){
+						if (turn == 1 && bullets>0 && bullets < 3){
+							cout << 2 << endl;
+							bullets=0;
+							++enemyBul;
+						}
+						if (turn == 1 && bullets == 0){
+							cout << 1 << endl;
+							++bullets;
+							++enemyBul;
+						}
+						if (turn == 0 && bullets > 0 && bullets < 3){
+							cout << 1 << endl;
+							++bullets;
+						}
+						if (turn == 0 && bullets > 2){
+							cout << 3 << endl;
+							bullets=0;
+						}
+						if (turn == 1 && bullets > 2){
+							cout << 3 << endl;
+							bullets = 0;
+						}
+						if (turn >1 && bullets > 2){
+							cout << 3 << endl;
+							bullets = 0;
+						}
+						if (turn >1 && bullets > 0 && bullets<2){
+							cout << 2 << endl;
+							bullets = 0;
+						}
+						if (turn >1 && bullets ==0){
+							cout << 1 << endl;
+							++bullets;
+						}
+					}
 				}
 			}
 			if (!DNIWE || !DNO){
