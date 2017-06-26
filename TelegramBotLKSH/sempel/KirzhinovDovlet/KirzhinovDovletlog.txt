@@ -10,4 +10,14 @@
 commit:
 b''{Mon Jun 26 21:45:56 2017}:KirzhinovDovlet: Добавлин новый файл
 commit:
-b''
+b''{Mon Jun 26 21:47:05 2017}:KirzhinovDovlet: Добавлин новый файл
+commit:
+b''{Mon Jun 26 21:47:24 2017}:KirzhinovDovlet:/MyBot
+{Mon Jun 26 21:48:25 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевДмитрий
+war НевструевДмитрий KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 21:48:26 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевДмитрий
+war НевструевДмитрий KirzhinovDovlet
+Exterminate!
+
