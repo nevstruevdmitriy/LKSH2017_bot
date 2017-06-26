@@ -209,3 +209,35 @@ Exterminate!
 war НевструевДмитрий KirzhinovDovlet
 Exterminate!
 
+{Mon Jun 26 21:57:52 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ЛободаАнтон
+war ЛободаАнтон KirzhinovDovlet
+you'll be back
+
+{Mon Jun 26 21:57:56 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ЛободаАнтон
+war ЛободаАнтон KirzhinovDovlet
+you'll be back
+
+{Mon Jun 26 21:57:59 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ТерзиянГрант
+war ТерзиянГрант KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
+{Mon Jun 26 21:58:03 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
+{Mon Jun 26 21:58:04 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
+{Mon Jun 26 21:58:07 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевДмитрий
+war НевструевДмитрий KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 21:58:08 2017}:KirzhinovDovlet:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
