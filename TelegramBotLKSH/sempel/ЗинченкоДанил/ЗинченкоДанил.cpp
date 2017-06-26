@@ -53,7 +53,7 @@ int main() {
 		int t;
 		if (count == 0)
 		{
-			cout << 1 << endl << 0 << endl << 0 << endl << 1 << endl << 0 << endl << 2 << endl;
+			cout << 1 << endl << 0 << endl << 0 << endl << 2 << endl;
 			continue;
 		}
 		cin >> xd;
