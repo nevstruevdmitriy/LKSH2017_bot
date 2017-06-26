@@ -465,3 +465,26 @@ war ЗинченкоДанил KirzhinovDovlet
 war БеленкоАлена KirzhinovDovlet
 you'll be back
 
+{Mon Jun 26 22:16:12 2017}:KirzhinovDovlet:Потребовать сатисфакцию :БеленкоАлена
+war БеленкоАлена KirzhinovDovlet
+you'll be back
+
+{Mon Jun 26 22:16:02 2017}:KirzhinovDovlet: Добавлин новый файл
+commit:
+b''{Mon Jun 26 22:16:13 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ЗинченкоДанил
+war ЗинченкоДанил KirzhinovDovlet
+
+Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
+
+{Mon Jun 26 22:16:15 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ТерзиянГрант
+war ТерзиянГрант KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:16:18 2017}:KirzhinovDovlet:Потребовать сатисфакцию :ЛободаАнтон
+war ЛободаАнтон KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 22:16:20 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевВладислав
+war НевструевВладислав KirzhinovDovlet
+you'll be back
+
