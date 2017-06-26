@@ -218,7 +218,7 @@ void strategy2() {
                 turn(0);
             }
         }
-        clever_fixed_turn();
+        clever_turn();
         get(i);
     }
 }
