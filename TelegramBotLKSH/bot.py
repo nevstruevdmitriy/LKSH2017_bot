@@ -68,7 +68,7 @@ def writeId(userName, id_):
 	fid_.write("%d\n" % id_)
 	fid_.close()
 
-def tellAllId(userName):
+def tellAllId(mes):
 	global bot
 	for i in os.listdir("sempel/"):
 		if "%s_id.txt" % i in os.listdir("sempel/%s/" % i):
@@ -81,7 +81,7 @@ def tellAllId(userName):
 
 			bot.send_photo(idPuple, photo)
 			photo.close()
-			bot.send_message(idPuple, "%s Обновил решение!" % userName)
+			bot.send_message(idPuple, mes)
 
 def start():
 	global raund
@@ -437,6 +437,9 @@ def inputMesText(mes):
 		log += "/task\n"
 		out = data.task
 		photo = open(data.p_task, "rb")
+	elif "/all_mes^" in mes.text:
+		messeg = split(mes.text, "^")
+		tellAllId("Объявление жюри: %s" % messeg[1])
 	elif "Потребовать сатисфакцию :" in mes.text:
 		log += mes.text + "\n"
 		anamy = mes.text.split(":")[1]
@@ -521,7 +524,7 @@ def inputMesData(mes):
 				bot.reply_to(mes, "Решение не скомпилировалось(\n log: %s\n"
 							 % logMake[:2113])
 			else:
-				tellAllId(nameSol)
+				tellAllId("%s Обновил решение!\n" % nameSol)
 				bot.reply_to(mes, "Решение принято))")
 
 	except Exception as e:
