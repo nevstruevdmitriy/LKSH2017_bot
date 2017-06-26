@@ -1,2 +1,5 @@
 {Mon Jun 26 20:22:28 2017}:PetrosyantsMary:{Mon Jun 26 20:23:01 2017}:PetrosyantsMary:/help
 {Mon Jun 26 20:23:44 2017}:PetrosyantsMary:/task
+{Mon Jun 26 21:01:42 2017}:PetrosyantsMary: Добавлин новый файл
+commit:
+b''
