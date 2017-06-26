@@ -7,14 +7,16 @@ int main() {
  while (true) 
  {
  
-  if(p<2)
+  if(p<1)
   {
   		p++;
   		cout << 1 << endl;
 		cout.flush();
 		
   	}
-  	else{
+
+  	else
+  	{
   		p--;
   		cout << 2 << endl;
 		cout.flush();
@@ -24,6 +26,6 @@ int main() {
   
   cin >> turn;
   
- }
+ } 
 	return 0;
 }
