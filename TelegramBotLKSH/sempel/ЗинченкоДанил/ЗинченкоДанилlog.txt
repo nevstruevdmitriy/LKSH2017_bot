@@ -3398,3 +3398,33 @@ Exterminate!
 war KirzhinovDovlet ЗинченкоДанил
 you'll be back
 
+{Mon Jun 26 22:15:39 2017}:ЗинченкоДанил:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet ЗинченкоДанил
+you'll be back
+
+{Mon Jun 26 22:15:41 2017}:ЗинченкоДанил:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet ЗинченкоДанил
+you'll be back
+
+{Mon Jun 26 22:15:27 2017}:ЗинченкоДанил: Добавлин новый файл
+commit:
+b''{Mon Jun 26 22:15:48 2017}:ЗинченкоДанил:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод ЗинченкоДанил
+Exterminate!
+
+{Mon Jun 26 22:15:54 2017}:ЗинченкоДанил:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод ЗинченкоДанил
+Exterminate!
+
+{Mon Jun 26 22:15:55 2017}:ЗинченкоДанил:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet ЗинченкоДанил
+you'll be back
+
+{Mon Jun 26 22:15:57 2017}:ЗинченкоДанил:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод ЗинченкоДанил
+Exterminate!
+
+{Mon Jun 26 22:15:59 2017}:ЗинченкоДанил:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet ЗинченкоДанил
+you'll be back
+

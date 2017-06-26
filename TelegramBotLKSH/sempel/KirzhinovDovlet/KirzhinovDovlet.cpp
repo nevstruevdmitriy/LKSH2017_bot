@@ -12,6 +12,10 @@ int main() {
 			cout << 1 << endl;
 			++bullets;
 		}
+		else if (cntTurns == 1){
+			cout << 0 << endl;
+		}
+		
 		else{
 			if (DNIWE && enemyBul < 3){
 				cout << 1 << endl;
