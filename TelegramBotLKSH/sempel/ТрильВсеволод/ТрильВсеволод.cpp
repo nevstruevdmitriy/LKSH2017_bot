@@ -5,7 +5,7 @@ int main()
 	int cnto=0, cntm=0, turn;
 	while(true)
 	{
-		if(cntm<=2)
+		if(cntm<=1)
 		{
 			cout<<1<<endl;
 			cout.flush();
