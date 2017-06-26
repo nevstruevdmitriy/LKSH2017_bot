@@ -10,7 +10,7 @@ int main()
 			cout.flush();
 		}
 		else{
-			if(i%2==0)
+			if(i%2==0||i==1)
 			{
 				cout<<0<<endl;
 				cout.flush();
