@@ -2775,3 +2775,11 @@ you'll be back
 war KirzhinovDovlet НевструевВладислав
 Exterminate!
 
+{Mon Jun 26 21:56:17 2017}:НевструевВладислав:Потребовать сатисфакцию :KirzhinovDovlet
+war KirzhinovDovlet НевструевВладислав
+Exterminate!
+
+{Mon Jun 26 21:56:21 2017}:НевструевВладислав:Потребовать сатисфакцию :ТерзиянГрант
+war ТерзиянГрант НевструевВладислав
+Exterminate!
+
