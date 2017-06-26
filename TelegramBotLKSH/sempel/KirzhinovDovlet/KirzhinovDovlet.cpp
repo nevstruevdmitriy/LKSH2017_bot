@@ -17,62 +17,65 @@ int main() {
 				cout << 1 << endl;
 				DNIWE = 0;
 			}
+			
 			if (DNO && turn!=1){
 				DNO = 0;
 				cout << 1 << endl;
-			}
-			if (turn == 1){
-				cout << 0 << endl;
-				++enemyBul;
 			}
 			if (enemyBul >= 3){
 				cout << 0 << endl;
 				DNIWE = 1;
 			}
-			if (turn == 0 && bullets == 3){
-				cout << 3 << endl;
-				bullets = 0;
+			if (!DNIWE){
+				if (turn == 1){
+					cout << 0 << endl;
+					++enemyBul;
+				}
+
+				if (turn == 0 && bullets == 3){
+					cout << 3 << endl;
+					bullets = 0;
+				}
+				if (turn == 0 && bullets < 3 && bullets >= 0){
+					cout << 2 << endl;
+					bullets = 0;
+				}
+				if (turn == 0 && bullets == 0){
+					cout << 0;
+					DNO = 1;
+				}
+
+				if (turn == 2 && bullets > 0 && bullets < 3){
+					cout << 2 << endl;
+					enemyBul = 0;
+					bullets = 0;
+				}
+				if (turn == 2 && bullets >= 3){
+					cout << 3 << endl;
+					enemyBul = 0;
+					bullets = 0;
+				}
+				if (turn == 2 && bullets == 0){
+					cout << 1 << endl;
+					enemyBul = 0;
+					++bullets;
+				}
+				if (turn == 3 && bullets > 0 && bullets < 3){
+					cout << 2 << endl;
+					enemyBul = 0;
+					bullets = 0;
+				}
+				if (turn == 3 && bullets >= 3){
+					cout << 3 << endl;
+					enemyBul = 0;
+					bullets = 0;
+				}
+				if (turn == 3 && bullets == 0){
+					cout << 1 << endl;
+					enemyBul = 0;
+					++bullets;
+				}
 			}
-			if (turn == 0 && bullets <3 && bullets>=0){
-				cout << 2 << endl;
-				bullets = 0;
-			}
-			if (turn == 0 && bullets == 0){
-				cout << 0;
-				DNO = 1;
-			}
-			
-			if (turn == 2 && bullets>0 && bullets<3){
-				cout << 2<<endl;
-				enemyBul = 0;
-				bullets = 0;
-			}
-			if (turn == 2 &&  bullets>=3){
-				cout << 3 << endl;
-				enemyBul = 0;
-				bullets = 0;
-			}
-			if (turn == 2 && bullets==0){
-				cout << 1 << endl;
-				enemyBul = 0;
-				++bullets;
-			}
-			if (turn == 3 && bullets > 0 && bullets < 3){
-				cout << 2 << endl;
-				enemyBul = 0;
-				bullets = 0;
-			}
-			if (turn == 3 && bullets>=3){
-				cout << 3 << endl;
-				enemyBul = 0;
-				bullets = 0;
-			}
-			if (turn == 3 && bullets == 0){
-				cout << 1 << endl;
-				enemyBul = 0;
-				++bullets;
-			}
-			
 			
 		}
 		++cntTurns;
