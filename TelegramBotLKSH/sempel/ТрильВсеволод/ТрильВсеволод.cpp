@@ -26,6 +26,15 @@ int main()
 			}
 			
 		}
+		cin>>turn;
+		if(turn>=2)
+		{
+			cnto=0;
+		}
+		if(turn==1)
+		{
+			++cnto;
+		}
 	}
 	return 0;
 }
