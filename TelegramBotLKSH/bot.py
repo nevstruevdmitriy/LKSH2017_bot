@@ -71,17 +71,20 @@ def writeId(userName, id_):
 def tellAllId(mes):
 	global bot
 	for i in os.listdir("sempel/"):
-		if "%s_id.txt" % i in os.listdir("sempel/%s/" % i):
-			id_ = open("sempel/%s/%s_id.txt" % (i, i), "r")
-			photo = open(data.p_update, "rb")
+		try:
+			if "%s_id.txt" % i in os.listdir("sempel/%s/" % i):
+				id_ = open("sempel/%s/%s_id.txt" % (i, i), "r")
+				photo = open(data.p_update, "rb")
+	
+				idPuple = int(id_.readline())
 
-			idPuple = int(id_.readline())
+				id_.close()
 
-			id_.close()
-
-			bot.send_photo(idPuple, photo)
-			photo.close()
-			bot.send_message(idPuple, mes)
+				bot.send_photo(idPuple, photo)
+				photo.close()
+				bot.send_message(idPuple, mes)
+		except:
+			print("error %s" % i)
 
 def start():
 	global raund
