@@ -74,3 +74,11 @@ war ЛободаАнтон KirzhinovDovlet
 
 Вы, двое бессмертных, так и станете рубиться, пока не настанет судный день?
 
+{Mon Jun 26 21:53:39 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевДмитрий
+war НевструевДмитрий KirzhinovDovlet
+Exterminate!
+
+{Mon Jun 26 21:53:42 2017}:KirzhinovDovlet:Потребовать сатисфакцию :НевструевДмитрий
+war НевструевДмитрий KirzhinovDovlet
+Exterminate!
+
