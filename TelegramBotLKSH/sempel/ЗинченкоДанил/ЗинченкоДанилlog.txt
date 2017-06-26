@@ -3350,3 +3350,7 @@ Exterminate!
 war KirzhinovDovlet ЗинченкоДанил
 Exterminate!
 
+{Mon Jun 26 22:12:09 2017}:ЗинченкоДанил:Потребовать сатисфакцию :ТрильВсеволод
+war ТрильВсеволод ЗинченкоДанил
+Exterminate!
+
