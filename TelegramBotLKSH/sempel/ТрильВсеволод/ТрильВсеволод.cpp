@@ -65,6 +65,14 @@ int main()
 		{
 			++cnto;
 		}
+		if(turn==2)
+		{
+			cnto--;
+		}
+		if(turn==3)
+		{
+			cnto=0;
+		}
 	}
 	return 0;
 }
