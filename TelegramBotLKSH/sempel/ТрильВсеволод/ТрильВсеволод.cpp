@@ -15,9 +15,16 @@ int main()
 			}
 			else
 			{
-				cout<<2<<endl;
-				cout.flush();
-				cntm--;
+				if(cntm>=1)
+				{
+					cout<<2<<endl;
+					cout.flush();
+					cntm--;
+				}
+				else
+				{
+					cout<<0;
+				}
 			}
 		}
 		else
@@ -34,6 +41,7 @@ int main()
 				{
 					cout<<3<<endl;
 					cout.flush();
+					cntm=0;
 				}
 				else
 				{
