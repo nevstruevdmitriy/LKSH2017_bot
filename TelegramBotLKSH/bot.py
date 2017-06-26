@@ -417,13 +417,13 @@ def inputMesText(mes):
 	log = "{%s}:%s:" % (varTime, userName)
 
 
-	if mes.text == "/help":
+	if mes.text == "/help" and 0:
 		out = data.help_
 		log += "/help\n"
 		photo = open(data.p_help, "rb")
 	elif mes.text == "/all_testing":
 		out = testing()
-	elif mes.text == "/MyBot":
+	elif mes.text == "/MyBot" and 0:
 		log += "/MyBot\n"
 		try:
 			print (userName)
@@ -436,24 +436,25 @@ def inputMesText(mes):
 		except:
 			out = data.errorFile
 			photo = open(data.p_mybot, "rb")
-	elif mes.text == "/task":
+	elif mes.text == "/task" and 0:
 		log += "/task\n"
 		out = data.task
 		photo = open(data.p_task, "rb")
-	elif "/all_mes^" in mes.text:
+	elif "/all_mes^" in mes.text and 0:
 		messeg = mes.text.split("^")
 		tellAllId("Объявление жюри: %s" % messeg[1])
-	elif "Потребовать сатисфакцию :" in mes.text:
+	elif "Потребовать сатисфакцию :" in mes.text and 0:
 		log += mes.text + "\n"
 		anamy = mes.text.split(":")[1]
 		fl = 1
-	elif "war_" in mes.text:
+	elif "war_" in mes.text and 0:
 		log += mes.task + "\n"
 		anamy = mes.text.split("_")[1]
 		fl = 1
 		
 	else:
 		photo = open(data.p_hi, "rb")
+		out = "Контест закрыт))"
 
 	if fl:
 		photo = open(data.p_war, "rb")
@@ -497,6 +498,10 @@ def inputMesData(mes):
 #	Здесь будет обработка решений учатсника
 #	print("dokument\n")
 	
+	
+	bot.reply_to(mes, "Контест закрыт))")
+	return
+
 	VarTime = time.ctime(time.time())
 
 	nameSol = mes.from_user.last_name + mes.from_user.first_name

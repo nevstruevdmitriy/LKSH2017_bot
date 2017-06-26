@@ -164,3 +164,7 @@ you'll be back
 war ЛободаАнтон PetrosyantsMary
 Exterminate!
 
+{Mon Jun 26 22:59:54 2017}:PetrosyantsMary:Потребовать сатисфакцию :НевструевВладислав
+war НевструевВладислав PetrosyantsMary
+you'll be back
+
